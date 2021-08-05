@@ -20,7 +20,9 @@
 		<link rel="stylesheet" href="css/style.css" />
 		<link rel="stylesheet" href="css/style-xlarge.css" />
 		<style type="text/css">
-			.white {}
+			.h3.a {
+				color: white;
+			}
 		</style>
 	</noscript>
 </head>
@@ -35,96 +37,91 @@
 				<li><a href="index.html">Home</a></li>
 				<li><a href="Blog.html">Blog</a></li>
 				<li><a href="Contact.html">Contact</a></li>
-
-
 			</ul>
 		</nav>
 	</header>
-
-	<!-- Banner -->
 	<section id="banner">
 		<h2>PROJECTS&nbsp;</h2>
 		<ul class="actions">
-			<li>
-				<a href="https://github.com/ADGVLOGS" class="button big"> GitHub</a>
-			</li>
+			<h3 class="a">Click the button to view the interactive web projects.</h3>
 			<li>
 				<a href="PathFinding/index.html" class="button big">Pathfinding Visualizer</a>
 			</li>
 		</ul>
+	</section>
+	<div class="iframe-container">
+		<iframe width="100%" height="1000" style="border: 2px solid #cccccc;"
+			src="https://adgvlogs.github.io/adg-projects/"></iframe>
+	</div>
 
 
-		
 	</section>
 
-	
-		</section>
 
 
-
-		<footer id="footer">
-			<div class="container">
-				<div class="row">
-					<div class="8u 12u$(medium)">
-						<ul class="copyright">
-							<li>&copy; Copyright 2021 ADGSTUDIOS - Ashlin Darius Govindasamy
-								- All Rights Reserved.</li>
-						</ul>
-					</div>
-					<div class="4u$ 12u$(medium)">
-						<ul class="icons">
-							<li>
-								<a onclick="return goToYouTube();"
-									class="icon rounded fa-youtube-play"><span
-										class="label">Facebook</span></a>
-							</li>
-							<li>
-								<a onclick="return goToInstagram();"
-									class="icon rounded fa-instagram"><span
-										class="label">Twitter</span></a>
-							</li>
-							<li>
-								<a onclick="return goToGithub();"
-									class="icon rounded fa-github"><span
-										class="label">Github</span></a>
-							</li>
-							<li>
-								<a onClick="return goTolinkedin();"
-									class="icon rounded fa-linkedin-square"><span
-										class="label">LinkedIn</span></a>
-							</li>
-						</ul>
-					</div>
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="8u 12u$(medium)">
+					<ul class="copyright">
+						<li>&copy; Copyright 2021 ADGSTUDIOS - Ashlin Darius Govindasamy
+							- All Rights Reserved.</li>
+					</ul>
+				</div>
+				<div class="4u$ 12u$(medium)">
+					<ul class="icons">
+						<li>
+							<a onclick="return goToYouTube();"
+								class="icon rounded fa-youtube-play"><span
+									class="label">Facebook</span></a>
+						</li>
+						<li>
+							<a onclick="return goToInstagram();"
+								class="icon rounded fa-instagram"><span
+									class="label">Twitter</span></a>
+						</li>
+						<li>
+							<a onclick="return goToGithub();"
+								class="icon rounded fa-github"><span
+									class="label">Github</span></a>
+						</li>
+						<li>
+							<a onClick="return goTolinkedin();"
+								class="icon rounded fa-linkedin-square"><span
+									class="label">LinkedIn</span></a>
+						</li>
+					</ul>
 				</div>
 			</div>
-		</footer>
-		<script>
-			function goToGoogleForm() {
-				window.location.href = "https://forms.gle/1X5EpmXq8QJZFnh96";
-				return 1;
-			}
+		</div>
+	</footer>
+	<script>
+		function goToGoogleForm() {
+			window.location.href = "https://forms.gle/1X5EpmXq8QJZFnh96";
+			return 1;
+		}
 
-			function goToYouTube() {
-				window.open("https://www.youtube.com/channel/UCYxaXY89qm35-iLFKZNd8jA", '_blank');
-				return 1;
-			}
+		function goToYouTube() {
+			window.open("https://www.youtube.com/channel/UCYxaXY89qm35-iLFKZNd8jA", '_blank');
+			return 1;
+		}
 
-			function goToInstagram() {
+		function goToInstagram() {
 
-				window.open("https://www.instagram.com/adgsenpai", '_blank');
-				return 1;
-			}
+			window.open("https://www.instagram.com/adgsenpai", '_blank');
+			return 1;
+		}
 
-			function goTolinkedin() {
-				window.open("https://www.linkedin.com/in/ashlin-darius-govindasamy-4a85a0159", '_blank')
-				return 1;
-			}
+		function goTolinkedin() {
+			window.open("https://www.linkedin.com/in/ashlin-darius-govindasamy-4a85a0159", '_blank')
+			return 1;
+		}
 
-			function goToGithub() {
-				window.open("https://github.com/ADGVLOGS", '_blank');
-				return 1;
-			}
-		</script>
+		function goToGithub() {
+			window.open("https://github.com/ADGVLOGS", '_blank');
+			return 1;
+		}
+	</script>
 </body>
 
 </html>
