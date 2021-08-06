@@ -24,6 +24,7 @@
 				color: white;
 			}
 		</style>
+
 	</noscript>
 </head>
 
@@ -50,7 +51,21 @@
 		</ul>
 	</section>
 	<div class="iframe-container">
-		<iframe width="100%" height="1000" sandbox="allow-top-navigation allow-scripts allow-forms" src="https://adgvlogs.github.io/adg-projects/"></iframe>
+
+		<iframe id="myframe" sandbox="allow-top-navigation allow-scripts allow-forms" width="100%" height="1000"
+			src="https://adgvlogs.github.io/adg-projects/">
+
+		</iframe>
+
+		<script>
+			focus();
+			var listener = window.addEventListener('blur', function () {
+				if (document.activeElement === document.getElementById('myframe')) {
+					window.location.href = "https://adgvlogs.github.io/adg-projects/";
+				}
+				window.removeEventListener('blur', listener);
+			});
+		</script>
 	</div>
 
 
@@ -120,6 +135,19 @@
 			window.open("https://github.com/ADGVLOGS", '_blank');
 			return 1;
 		}
+		function iframeRef(frameRef) {
+			return frameRef.contentWindow ? frameRef.contentWindow.document : frameRef.contentDocument
+		}
+
+		var inside = iframeRef(document.getElementById('page'));
+
+		var links = inside.getElementsByTagName('a');
+
+		for (var i = 0; i < links.length; i++) {
+			links[i].setAttribute('target', '_blank');
+		}
+
+
 	</script>
 </body>
 
