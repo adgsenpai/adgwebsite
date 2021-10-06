@@ -6947,6 +6947,7 @@ new Vue({
     }
   },
   created() {
+    randomize();
     let vm = this;
     this.currentTrack = this.tracks[0];
     this.audio = new Audio();
