@@ -6858,9 +6858,6 @@ new Vue({
         this.isTimerPlaying = false;
       }
     },
-    randomize() {
-      shuffleVueArray(this.tracks);
-    },
     generateTime() {
       let width = (100 / this.audio.duration) * this.audio.currentTime;
       this.barWidth = width + "%";
@@ -6947,7 +6944,6 @@ new Vue({
     }
   },
   created() {
-    randomize();
     let vm = this;
     this.currentTrack = this.tracks[0];
     this.audio = new Audio();
