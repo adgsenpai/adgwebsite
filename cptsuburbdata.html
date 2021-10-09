@@ -1,0 +1,4078 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS=false; L_NO_TOUCH=false; L_DISABLE_3D=false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.4.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+    <meta name="viewport" content="width=device-width,
+        initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <style>#map_8ea3b83b46bd46c7a482e8eb2c9633fd {
+        position: relative;
+        width: 100.0%;
+        height: 100.0%;
+        left: 0.0%;
+        top: 0.0%;
+        }
+    </style>
+</head>
+<body>    
+    
+    <div class="folium-map" id="map_8ea3b83b46bd46c7a482e8eb2c9633fd" ></div>
+</body>
+<script>    
+    
+    
+        var bounds = null;
+    
+
+    var map_8ea3b83b46bd46c7a482e8eb2c9633fd = L.map(
+        'map_8ea3b83b46bd46c7a482e8eb2c9633fd', {
+        center: [-33.903294897303354, 18.420746651123252],
+        zoom: 10,
+        maxBounds: bounds,
+        layers: [],
+        worldCopyJump: false,
+        crs: L.CRS.EPSG3857,
+        zoomControl: true,
+        });
+
+
+    
+    var tile_layer_516562ddd5304de982c0144b5f354e2b = L.tileLayer(
+        'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+        {
+        "attribution": null,
+        "detectRetina": false,
+        "maxNativeZoom": 18,
+        "maxZoom": 18,
+        "minZoom": 0,
+        "noWrap": false,
+        "opacity": 1,
+        "subdomains": "abc",
+        "tms": false
+}).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+    
+
+            var circle_d3a82af11c144ef8bbdb9b448fa14c2c = L.circle(
+                [-33.903294897303354, 18.420746651123252],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": false,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 1250,
+  "stroke": true,
+  "weight": 3
+}
+                )
+                .addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+            
+    
+        var marker_56fb635c6c484a3da591edb499c12894 = L.marker(
+            [-33.512985, 18.47542],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_77621371a69b4e49b988765e5ab11483 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_dc800c2438a546d49a4690d58e6c6076 = $(`<div id="html_dc800c2438a546d49a4690d58e6c6076" style="width: 100.0%; height: 100.0%;">Suburb: Mamre      Distance from  V&A Waterfront: 41.616590872326235KM          Height above sea level(m): 197</div>`)[0];
+                popup_77621371a69b4e49b988765e5ab11483.setContent(html_dc800c2438a546d49a4690d58e6c6076);
+            
+
+            marker_56fb635c6c484a3da591edb499c12894.bindPopup(popup_77621371a69b4e49b988765e5ab11483)
+            ;
+
+            
+        
+    
+        marker_56fb635c6c484a3da591edb499c12894.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8bd043ee8e7d404a9bd3973fe3240e9f = L.marker(
+            [-33.5672222, 18.5002778],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_bab9fff416a64a5f98927ea439afcb22 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_06e3b7b5fcc44a7aadf084f31217e36c = $(`<div id="html_06e3b7b5fcc44a7aadf084f31217e36c" style="width: 100.0%; height: 100.0%;">Suburb: Atlantis      Distance from  V&A Waterfront: 36.53312174687978KM          Height above sea level(m): 180</div>`)[0];
+                popup_bab9fff416a64a5f98927ea439afcb22.setContent(html_06e3b7b5fcc44a7aadf084f31217e36c);
+            
+
+            marker_8bd043ee8e7d404a9bd3973fe3240e9f.bindPopup(popup_bab9fff416a64a5f98927ea439afcb22)
+            ;
+
+            
+        
+    
+        marker_8bd043ee8e7d404a9bd3973fe3240e9f.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a47ca035db564dfdae128a5d221e9c40 = L.marker(
+            [-33.8402778, 18.6494444],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_e93daf56bcd1453ebd0357d869a6e0b3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3a057556bc8345719a1db35ae31f92df = $(`<div id="html_3a057556bc8345719a1db35ae31f92df" style="width: 100.0%; height: 100.0%;">Suburb: Durbanville      Distance from  V&A Waterfront: 26.283554498942962KM          Height above sea level(m): 176</div>`)[0];
+                popup_e93daf56bcd1453ebd0357d869a6e0b3.setContent(html_3a057556bc8345719a1db35ae31f92df);
+            
+
+            marker_a47ca035db564dfdae128a5d221e9c40.bindPopup(popup_e93daf56bcd1453ebd0357d869a6e0b3)
+            ;
+
+            
+        
+    
+        marker_a47ca035db564dfdae128a5d221e9c40.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_76fc2bf747fe402f9a8d8616ea7ef737 = L.marker(
+            [-33.8855556, 18.6063889],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_1de2a56690f24126b5a533fc2774a047 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_10c9f02ec0f843ec9bb6e9743d9b10ea = $(`<div id="html_10c9f02ec0f843ec9bb6e9743d9b10ea" style="width: 100.0%; height: 100.0%;">Suburb: Loevenstein      Distance from  V&A Waterfront: 20.727044252747966KM          Height above sea level(m): 163</div>`)[0];
+                popup_1de2a56690f24126b5a533fc2774a047.setContent(html_10c9f02ec0f843ec9bb6e9743d9b10ea);
+            
+
+            marker_76fc2bf747fe402f9a8d8616ea7ef737.bindPopup(popup_1de2a56690f24126b5a533fc2774a047)
+            ;
+
+            
+        
+    
+        marker_76fc2bf747fe402f9a8d8616ea7ef737.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5e605fb733274855be91190a5f0cff65 = L.marker(
+            [-33.9438889, 18.415],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_dbb3b8aa1cdc45d7a044834f8560bfbd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_237800909c294114abceaf406b01a2a0 = $(`<div id="html_237800909c294114abceaf406b01a2a0" style="width: 100.0%; height: 100.0%;">Suburb: Oranjezicht      Distance from  V&A Waterfront: 4.330045644266129KM          Height above sea level(m): 152</div>`)[0];
+                popup_dbb3b8aa1cdc45d7a044834f8560bfbd.setContent(html_237800909c294114abceaf406b01a2a0);
+            
+
+            marker_5e605fb733274855be91190a5f0cff65.bindPopup(popup_dbb3b8aa1cdc45d7a044834f8560bfbd)
+            ;
+
+            
+        
+    
+        marker_5e605fb733274855be91190a5f0cff65.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_25495e7d78fc4437a466b888105e9ef3 = L.marker(
+            [-33.8775, 18.5855556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_87e060e1cb8e4f95aa7eaed445da768f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7908b97e74fb4b32adda9f0e0261e128 = $(`<div id="html_7908b97e74fb4b32adda9f0e0261e128" style="width: 100.0%; height: 100.0%;">Suburb: Plattekloof      Distance from  V&A Waterfront: 18.52667394044253KM          Height above sea level(m): 141</div>`)[0];
+                popup_87e060e1cb8e4f95aa7eaed445da768f.setContent(html_7908b97e74fb4b32adda9f0e0261e128);
+            
+
+            marker_25495e7d78fc4437a466b888105e9ef3.bindPopup(popup_87e060e1cb8e4f95aa7eaed445da768f)
+            ;
+
+            
+        
+    
+        marker_25495e7d78fc4437a466b888105e9ef3.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b2e8ca5165694e61a83b56e2f06b32c9 = L.marker(
+            [-33.93758615, 18.43002595420598],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b54a16a77ba446f284f6e27d6a7da1c2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9294a8a925f44d4889e903032b9a6513 = $(`<div id="html_9294a8a925f44d4889e903032b9a6513" style="width: 100.0%; height: 100.0%;">Suburb: Devil's Peak Estate      Distance from  V&A Waterfront: 3.7618152418534527KM          Height above sea level(m): 134</div>`)[0];
+                popup_b54a16a77ba446f284f6e27d6a7da1c2.setContent(html_9294a8a925f44d4889e903032b9a6513);
+            
+
+            marker_b2e8ca5165694e61a83b56e2f06b32c9.bindPopup(popup_b54a16a77ba446f284f6e27d6a7da1c2)
+            ;
+
+            
+        
+    
+        marker_b2e8ca5165694e61a83b56e2f06b32c9.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_53d9a717d00949aa8f3712288708c83e = L.marker(
+            [-33.9394385, 18.4282411],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_a96e43ed73a84ff5b4e3bbaf92d6abc5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_db2420ac85aa48138f96691cd40d96dd = $(`<div id="html_db2420ac85aa48138f96691cd40d96dd" style="width: 100.0%; height: 100.0%;">Suburb: St James      Distance from  V&A Waterfront: 3.9029795646794967KM          Height above sea level(m): 121</div>`)[0];
+                popup_a96e43ed73a84ff5b4e3bbaf92d6abc5.setContent(html_db2420ac85aa48138f96691cd40d96dd);
+            
+
+            marker_53d9a717d00949aa8f3712288708c83e.bindPopup(popup_a96e43ed73a84ff5b4e3bbaf92d6abc5)
+            ;
+
+            
+        
+    
+        marker_53d9a717d00949aa8f3712288708c83e.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_aedd428a37604d4e9ca648639a151ce3 = L.marker(
+            [-33.9405556, 18.4230556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_aaca4e8535234eea9df34fb7c61508b7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_acc365248b7746088da3481ed19cabdf = $(`<div id="html_acc365248b7746088da3481ed19cabdf" style="width: 100.0%; height: 100.0%;">Suburb: Vredehoek      Distance from  V&A Waterfront: 3.9392595423592067KM          Height above sea level(m): 120</div>`)[0];
+                popup_aaca4e8535234eea9df34fb7c61508b7.setContent(html_acc365248b7746088da3481ed19cabdf);
+            
+
+            marker_aedd428a37604d4e9ca648639a151ce3.bindPopup(popup_aaca4e8535234eea9df34fb7c61508b7)
+            ;
+
+            
+        
+    
+        marker_aedd428a37604d4e9ca648639a151ce3.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ad936c6d83204bf9a4de66338a024793 = L.marker(
+            [-33.9407208, 18.4245043726932],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_50b942901bed47bfa17d5adb6d4906d7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6c3fd81e26c047478a12482625024d96 = $(`<div id="html_6c3fd81e26c047478a12482625024d96" style="width: 100.0%; height: 100.0%;">Suburb: Capri Village      Distance from  V&A Waterfront: 3.970343351787323KM          Height above sea level(m): 120</div>`)[0];
+                popup_50b942901bed47bfa17d5adb6d4906d7.setContent(html_6c3fd81e26c047478a12482625024d96);
+            
+
+            marker_ad936c6d83204bf9a4de66338a024793.bindPopup(popup_50b942901bed47bfa17d5adb6d4906d7)
+            ;
+
+            
+        
+    
+        marker_ad936c6d83204bf9a4de66338a024793.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5e9093eada7b4b17a491035d64fe9506 = L.marker(
+            [-33.883056, 18.7],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_854a3b899bfa476c9a809f02a0992638 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7a3d42cd274a4d0bb80d2f20aa81cb91 = $(`<div id="html_7a3d42cd274a4d0bb80d2f20aa81cb91" style="width: 100.0%; height: 100.0%;">Suburb: Brackenfell      Distance from  V&A Waterfront: 31.124757806703172KM          Height above sea level(m): 117</div>`)[0];
+                popup_854a3b899bfa476c9a809f02a0992638.setContent(html_7a3d42cd274a4d0bb80d2f20aa81cb91);
+            
+
+            marker_5e9093eada7b4b17a491035d64fe9506.bindPopup(popup_854a3b899bfa476c9a809f02a0992638)
+            ;
+
+            
+        
+    
+        marker_5e9093eada7b4b17a491035d64fe9506.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_176de4c7279e4905a2fa30ab88a1344a = L.marker(
+            [-33.96, 18.3827778],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_0dd87c4749074fdda5e5daddfc6c4b35 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_542e00f3f1f241ccac670e8ce02b3126 = $(`<div id="html_542e00f3f1f241ccac670e8ce02b3126" style="width: 100.0%; height: 100.0%;">Suburb: Bakoven      Distance from  V&A Waterfront: 7.322565341682166KM          Height above sea level(m): 116</div>`)[0];
+                popup_0dd87c4749074fdda5e5daddfc6c4b35.setContent(html_542e00f3f1f241ccac670e8ce02b3126);
+            
+
+            marker_176de4c7279e4905a2fa30ab88a1344a.bindPopup(popup_0dd87c4749074fdda5e5daddfc6c4b35)
+            ;
+
+            
+        
+    
+        marker_176de4c7279e4905a2fa30ab88a1344a.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9fe55285d4cd4a998f13930cf4d986a9 = L.marker(
+            [-33.8837334, 18.636870177662715],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_e81c983ebb0741d9b6306d01798f014b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_515dec63ad804148991a3b8bdc200dce = $(`<div id="html_515dec63ad804148991a3b8bdc200dce" style="width: 100.0%; height: 100.0%;">Suburb: Bellville      Distance from  V&A Waterfront: 24.120173276790286KM          Height above sea level(m): 115</div>`)[0];
+                popup_e81c983ebb0741d9b6306d01798f014b.setContent(html_515dec63ad804148991a3b8bdc200dce);
+            
+
+            marker_9fe55285d4cd4a998f13930cf4d986a9.bindPopup(popup_e81c983ebb0741d9b6306d01798f014b)
+            ;
+
+            
+        
+    
+        marker_9fe55285d4cd4a998f13930cf4d986a9.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_97e79da3244b48b59471f1f334bc004a = L.marker(
+            [-33.9361312, 18.445175470187436],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_691feb6f672944489fff474063b16a67 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4baa12a3aed049b69451270fc208b512 = $(`<div id="html_4baa12a3aed049b69451270fc208b512" style="width: 100.0%; height: 100.0%;">Suburb: Walmer Estate       Distance from  V&A Waterfront: 4.401957194462347KM          Height above sea level(m): 108</div>`)[0];
+                popup_691feb6f672944489fff474063b16a67.setContent(html_4baa12a3aed049b69451270fc208b512);
+            
+
+            marker_97e79da3244b48b59471f1f334bc004a.bindPopup(popup_691feb6f672944489fff474063b16a67)
+            ;
+
+            
+        
+    
+        marker_97e79da3244b48b59471f1f334bc004a.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_326e3d39b301474780bc8f0179e45f21 = L.marker(
+            [-33.9251944, 18.3877426],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_92ba8b2e57af45769dbef8682437dc2d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_de870ab0646d4cfbb55a6a9c08621e26 = $(`<div id="html_de870ab0646d4cfbb55a6a9c08621e26" style="width: 100.0%; height: 100.0%;">Suburb: Fresnaye      Distance from  V&A Waterfront: 4.336674649254816KM          Height above sea level(m): 104</div>`)[0];
+                popup_92ba8b2e57af45769dbef8682437dc2d.setContent(html_de870ab0646d4cfbb55a6a9c08621e26);
+            
+
+            marker_326e3d39b301474780bc8f0179e45f21.bindPopup(popup_92ba8b2e57af45769dbef8682437dc2d)
+            ;
+
+            
+        
+    
+        marker_326e3d39b301474780bc8f0179e45f21.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2f62b3f344ee416092c6bc4f3625a042 = L.marker(
+            [-33.9886111, 18.4466667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_cacea05c31fb466bb685b644d6fb7f48 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4ab5fe58de2c410cb8befd5a6f669da5 = $(`<div id="html_4ab5fe58de2c410cb8befd5a6f669da5" style="width: 100.0%; height: 100.0%;">Suburb: Bishopscourt      Distance from  V&A Waterfront: 9.450203153699832KM          Height above sea level(m): 99</div>`)[0];
+                popup_cacea05c31fb466bb685b644d6fb7f48.setContent(html_4ab5fe58de2c410cb8befd5a6f669da5);
+            
+
+            marker_2f62b3f344ee416092c6bc4f3625a042.bindPopup(popup_cacea05c31fb466bb685b644d6fb7f48)
+            ;
+
+            
+        
+    
+        marker_2f62b3f344ee416092c6bc4f3625a042.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_76139fccd6a44142ac7a5340c1c58094 = L.marker(
+            [-33.8477778, 18.7161111],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_6ebb262254334a62a580551d4f922fcf = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4319e71304154705a3fd582a44e5f0bc = $(`<div id="html_4319e71304154705a3fd582a44e5f0bc" style="width: 100.0%; height: 100.0%;">Suburb: Kraaifontein      Distance from  V&A Waterfront: 33.360286922552916KM          Height above sea level(m): 97</div>`)[0];
+                popup_6ebb262254334a62a580551d4f922fcf.setContent(html_4319e71304154705a3fd582a44e5f0bc);
+            
+
+            marker_76139fccd6a44142ac7a5340c1c58094.bindPopup(popup_6ebb262254334a62a580551d4f922fcf)
+            ;
+
+            
+        
+    
+        marker_76139fccd6a44142ac7a5340c1c58094.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_23381fbeb2754e1fb861291bc79b9f44 = L.marker(
+            [-33.8447933, 18.6681076],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_cc2f55beddcd494a9bd8abdd2599b5f4 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8f5ed69cef3a4eafb8ee9d58df0b94c0 = $(`<div id="html_8f5ed69cef3a4eafb8ee9d58df0b94c0" style="width: 100.0%; height: 100.0%;">Suburb: Kuils River      Distance from  V&A Waterfront: 28.18823019534056KM          Height above sea level(m): 97</div>`)[0];
+                popup_cc2f55beddcd494a9bd8abdd2599b5f4.setContent(html_8f5ed69cef3a4eafb8ee9d58df0b94c0);
+            
+
+            marker_23381fbeb2754e1fb861291bc79b9f44.bindPopup(popup_cc2f55beddcd494a9bd8abdd2599b5f4)
+            ;
+
+            
+        
+    
+        marker_23381fbeb2754e1fb861291bc79b9f44.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d7612fe209214915b02df4b1478ed32b = L.marker(
+            [-34.1176801, 18.910297],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_8388e02ce2a34500bada0f7c2dd2d779 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6f65156e7a704a71acec50ae6218321f = $(`<div id="html_6f65156e7a704a71acec50ae6218321f" style="width: 100.0%; height: 100.0%;">Suburb: Sir Lowry's Pass Village      Distance from  V&A Waterfront: 58.934627217892746KM          Height above sea level(m): 93</div>`)[0];
+                popup_8388e02ce2a34500bada0f7c2dd2d779.setContent(html_6f65156e7a704a71acec50ae6218321f);
+            
+
+            marker_d7612fe209214915b02df4b1478ed32b.bindPopup(popup_8388e02ce2a34500bada0f7c2dd2d779)
+            ;
+
+            
+        
+    
+        marker_d7612fe209214915b02df4b1478ed32b.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ad73730b834c442492cba9127b7f125c = L.marker(
+            [-33.9375821, 18.451613758361354],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_98490383336d4dac86bae1d9df2bae1c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c7b96e3287a944dcada7d3684b28563e = $(`<div id="html_c7b96e3287a944dcada7d3684b28563e" style="width: 100.0%; height: 100.0%;">Suburb: University Estate      Distance from  V&A Waterfront: 4.986214294701665KM          Height above sea level(m): 91</div>`)[0];
+                popup_98490383336d4dac86bae1d9df2bae1c.setContent(html_c7b96e3287a944dcada7d3684b28563e);
+            
+
+            marker_ad73730b834c442492cba9127b7f125c.bindPopup(popup_98490383336d4dac86bae1d9df2bae1c)
+            ;
+
+            
+        
+    
+        marker_ad73730b834c442492cba9127b7f125c.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a65eccb9a822462789dec00fe0771fcf = L.marker(
+            [-33.954773599999996, 18.38185236529182],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_f8a8c7113dc142c2b1f4ca5b8dd3b040 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_88b285619b594b1890fc5d33cfe8183a = $(`<div id="html_88b285619b594b1890fc5d33cfe8183a" style="width: 100.0%; height: 100.0%;">Suburb: Camps Bay      Distance from  V&A Waterfront: 6.943007624456314KM          Height above sea level(m): 77</div>`)[0];
+                popup_f8a8c7113dc142c2b1f4ca5b8dd3b040.setContent(html_88b285619b594b1890fc5d33cfe8183a);
+            
+
+            marker_a65eccb9a822462789dec00fe0771fcf.bindPopup(popup_f8a8c7113dc142c2b1f4ca5b8dd3b040)
+            ;
+
+            
+        
+    
+        marker_a65eccb9a822462789dec00fe0771fcf.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_979e297a32d84b30ae721bd9e60ee23b = L.marker(
+            [-34.0036249, 18.4672507],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_6ec3b246c41b4d2da11c53823b5d3a8d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_50f88b9ab07c421bbed166d5c771263f = $(`<div id="html_50f88b9ab07c421bbed166d5c771263f" style="width: 100.0%; height: 100.0%;">Suburb: Wynberg      Distance from  V&A Waterfront: 11.778881255979957KM          Height above sea level(m): 68</div>`)[0];
+                popup_6ec3b246c41b4d2da11c53823b5d3a8d.setContent(html_50f88b9ab07c421bbed166d5c771263f);
+            
+
+            marker_979e297a32d84b30ae721bd9e60ee23b.bindPopup(popup_6ec3b246c41b4d2da11c53823b5d3a8d)
+            ;
+
+            
+        
+    
+        marker_979e297a32d84b30ae721bd9e60ee23b.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a104a429f0724cda98a93ec109ec7839 = L.marker(
+            [-33.9941667, 18.4683333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_65da3993692e4e1d9a081fade04f225b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d1163850a2b54382ae3de2f12a6e32c4 = $(`<div id="html_d1163850a2b54382ae3de2f12a6e32c4" style="width: 100.0%; height: 100.0%;">Suburb: Kenilworth      Distance from  V&A Waterfront: 10.948931938799504KM          Height above sea level(m): 67</div>`)[0];
+                popup_65da3993692e4e1d9a081fade04f225b.setContent(html_d1163850a2b54382ae3de2f12a6e32c4);
+            
+
+            marker_a104a429f0724cda98a93ec109ec7839.bindPopup(popup_65da3993692e4e1d9a081fade04f225b)
+            ;
+
+            
+        
+    
+        marker_a104a429f0724cda98a93ec109ec7839.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3cd34d6743ca40679dc5347925729da1 = L.marker(
+            [-33.9283333, 18.4063889],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_4c2f8efed58242f7904d4ebbe7797a77 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4efc6bc33ff8445cac67688b28a8c58d = $(`<div id="html_4efc6bc33ff8445cac67688b28a8c58d" style="width: 100.0%; height: 100.0%;">Suburb: Tamboerskloof      Distance from  V&A Waterfront: 3.0865651901099005KM          Height above sea level(m): 67</div>`)[0];
+                popup_4c2f8efed58242f7904d4ebbe7797a77.setContent(html_4efc6bc33ff8445cac67688b28a8c58d);
+            
+
+            marker_3cd34d6743ca40679dc5347925729da1.bindPopup(popup_4c2f8efed58242f7904d4ebbe7797a77)
+            ;
+
+            
+        
+    
+        marker_3cd34d6743ca40679dc5347925729da1.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_14b3f88ef22f4c6882fac90a796b72e9 = L.marker(
+            [-34.0288149, 18.3619151],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_300f6079639b4b1b956201357983d69c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_17195f4875d54ed5bb23e61b7f64d7f2 = $(`<div id="html_17195f4875d54ed5bb23e61b7f64d7f2" style="width: 100.0%; height: 100.0%;">Suburb: Imizamo Yethu      Distance from  V&A Waterfront: 14.771810684226626KM          Height above sea level(m): 65</div>`)[0];
+                popup_300f6079639b4b1b956201357983d69c.setContent(html_17195f4875d54ed5bb23e61b7f64d7f2);
+            
+
+            marker_14b3f88ef22f4c6882fac90a796b72e9.bindPopup(popup_300f6079639b4b1b956201357983d69c)
+            ;
+
+            
+        
+    
+        marker_14b3f88ef22f4c6882fac90a796b72e9.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e2490504c09a478ea350ca7e12d04a84 = L.marker(
+            [-33.9447222, 18.6258333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_decc92d54af347b2b08920d77915708d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_64691ab392b54840b6105c1d058103d9 = $(`<div id="html_64691ab392b54840b6105c1d058103d9" style="width: 100.0%; height: 100.0%;">Suburb: Belhar      Distance from  V&A Waterfront: 23.21912479076183KM          Height above sea level(m): 59</div>`)[0];
+                popup_decc92d54af347b2b08920d77915708d.setContent(html_64691ab392b54840b6105c1d058103d9);
+            
+
+            marker_e2490504c09a478ea350ca7e12d04a84.bindPopup(popup_decc92d54af347b2b08920d77915708d)
+            ;
+
+            
+        
+    
+        marker_e2490504c09a478ea350ca7e12d04a84.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_297a26221ba94b63bf32ba6b7526a5ab = L.marker(
+            [-33.920560949999995, 18.41288085411493],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_a0e3d0cfb78148818ccb61a303fb5f72 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1a72c636cf614040b15552b779cbb421 = $(`<div id="html_1a72c636cf614040b15552b779cbb421" style="width: 100.0%; height: 100.0%;">Suburb: Schotsche Kloof      Distance from  V&A Waterfront: 2.0206669049201436KM          Height above sea level(m): 59</div>`)[0];
+                popup_a0e3d0cfb78148818ccb61a303fb5f72.setContent(html_1a72c636cf614040b15552b779cbb421);
+            
+
+            marker_297a26221ba94b63bf32ba6b7526a5ab.bindPopup(popup_a0e3d0cfb78148818ccb61a303fb5f72)
+            ;
+
+            
+        
+    
+        marker_297a26221ba94b63bf32ba6b7526a5ab.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bc2dd38f7bad44d19434901567ccc033 = L.marker(
+            [-33.9210939, 18.4141003],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_c444d08f879f4846b180af881fddb47e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_317ff44ef6284a91aa5a0ae40d450abf = $(`<div id="html_317ff44ef6284a91aa5a0ae40d450abf" style="width: 100.0%; height: 100.0%;">Suburb: Bo-Kaap       Distance from  V&A Waterfront: 2.0179846566776183KM          Height above sea level(m): 59</div>`)[0];
+                popup_c444d08f879f4846b180af881fddb47e.setContent(html_317ff44ef6284a91aa5a0ae40d450abf);
+            
+
+            marker_bc2dd38f7bad44d19434901567ccc033.bindPopup(popup_c444d08f879f4846b180af881fddb47e)
+            ;
+
+            
+        
+    
+        marker_bc2dd38f7bad44d19434901567ccc033.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_97b99470571a4753b2d56a2b3984d469 = L.marker(
+            [-34.008588, 18.3442322],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_5ca573ab02704d1dab4420d5960c4451 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42b30bd2db9545cdaa43d87d9544be1d = $(`<div id="html_42b30bd2db9545cdaa43d87d9544be1d" style="width: 100.0%; height: 100.0%;">Suburb: Llandudno      Distance from  V&A Waterfront: 13.994011067719274KM          Height above sea level(m): 57</div>`)[0];
+                popup_5ca573ab02704d1dab4420d5960c4451.setContent(html_42b30bd2db9545cdaa43d87d9544be1d);
+            
+
+            marker_97b99470571a4753b2d56a2b3984d469.bindPopup(popup_5ca573ab02704d1dab4420d5960c4451)
+            ;
+
+            
+        
+    
+        marker_97b99470571a4753b2d56a2b3984d469.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_68dfc71b775543e2b22f52a36cfaa328 = L.marker(
+            [-33.8827778, 18.5702778],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_89f22f4fde4346ff9fab6bd22ae06d15 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7233388771d046dc9f17b174c88ab5fa = $(`<div id="html_7233388771d046dc9f17b174c88ab5fa" style="width: 100.0%; height: 100.0%;">Suburb: Panorama      Distance from  V&A Waterfront: 16.767277996985612KM          Height above sea level(m): 56</div>`)[0];
+                popup_89f22f4fde4346ff9fab6bd22ae06d15.setContent(html_7233388771d046dc9f17b174c88ab5fa);
+            
+
+            marker_68dfc71b775543e2b22f52a36cfaa328.bindPopup(popup_89f22f4fde4346ff9fab6bd22ae06d15)
+            ;
+
+            
+        
+    
+        marker_68dfc71b775543e2b22f52a36cfaa328.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_78a68e65ddcd47e892909cf4b8cb1bdd = L.marker(
+            [-33.9327778, 18.4097222],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_fe8e7a3811a94f9ea6dae9dc4282e80b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cf65d25558bc4a63ab1c558fcc9b3b68 = $(`<div id="html_cf65d25558bc4a63ab1c558fcc9b3b68" style="width: 100.0%; height: 100.0%;">Suburb: Gardens      Distance from  V&A Waterfront: 3.343317823080779KM          Height above sea level(m): 54</div>`)[0];
+                popup_fe8e7a3811a94f9ea6dae9dc4282e80b.setContent(html_cf65d25558bc4a63ab1c558fcc9b3b68);
+            
+
+            marker_78a68e65ddcd47e892909cf4b8cb1bdd.bindPopup(popup_fe8e7a3811a94f9ea6dae9dc4282e80b)
+            ;
+
+            
+        
+    
+        marker_78a68e65ddcd47e892909cf4b8cb1bdd.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3ac810ba58fc47f380393e0d9ff1a832 = L.marker(
+            [-33.9655556, 18.6444444],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_581074ffff3b455d8d6af890593fda38 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d61b8b0f2c904fe9bda85bc85f433f20 = $(`<div id="html_d61b8b0f2c904fe9bda85bc85f433f20" style="width: 100.0%; height: 100.0%;">Suburb: Delft      Distance from  V&A Waterfront: 25.7255800288612KM          Height above sea level(m): 50</div>`)[0];
+                popup_581074ffff3b455d8d6af890593fda38.setContent(html_d61b8b0f2c904fe9bda85bc85f433f20);
+            
+
+            marker_3ac810ba58fc47f380393e0d9ff1a832.bindPopup(popup_581074ffff3b455d8d6af890593fda38)
+            ;
+
+            
+        
+    
+        marker_3ac810ba58fc47f380393e0d9ff1a832.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8cce1cb3fedb42e5bb5abd9b3158c6cc = L.marker(
+            [-33.9172222, 18.3922222],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_41b9df6920e2497e80274a1020199b09 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_39cfd18cd7fe40d4bb5c56538a667f23 = $(`<div id="html_39cfd18cd7fe40d4bb5c56538a667f23" style="width: 100.0%; height: 100.0%;">Suburb: Sea Point      Distance from  V&A Waterfront: 3.4956170506590336KM          Height above sea level(m): 48</div>`)[0];
+                popup_41b9df6920e2497e80274a1020199b09.setContent(html_39cfd18cd7fe40d4bb5c56538a667f23);
+            
+
+            marker_8cce1cb3fedb42e5bb5abd9b3158c6cc.bindPopup(popup_41b9df6920e2497e80274a1020199b09)
+            ;
+
+            
+        
+    
+        marker_8cce1cb3fedb42e5bb5abd9b3158c6cc.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c780c5af3caa4b9497b5d28795003685 = L.marker(
+            [-34.0333333, 18.4513889],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_d19684a1522a41509f4cbb6fc9490d06 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6535f541c1c844f7951ab4fd816267bb = $(`<div id="html_6535f541c1c844f7951ab4fd816267bb" style="width: 100.0%; height: 100.0%;">Suburb: Meadowridge      Distance from  V&A Waterfront: 14.134329859871258KM          Height above sea level(m): 45</div>`)[0];
+                popup_d19684a1522a41509f4cbb6fc9490d06.setContent(html_6535f541c1c844f7951ab4fd816267bb);
+            
+
+            marker_c780c5af3caa4b9497b5d28795003685.bindPopup(popup_d19684a1522a41509f4cbb6fc9490d06)
+            ;
+
+            
+        
+    
+        marker_c780c5af3caa4b9497b5d28795003685.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_13ed3175f00a487f967d49c3d7e2f346 = L.marker(
+            [-34.0185856, 18.4521729],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_d23a342b67044f2281f07922ead9834b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5c5b1cd21fd24d149571d86b2da5b368 = $(`<div id="html_5c5b1cd21fd24d149571d86b2da5b368" style="width: 100.0%; height: 100.0%;">Suburb: Constantia      Distance from  V&A Waterfront: 12.653840730773673KM          Height above sea level(m): 45</div>`)[0];
+                popup_d23a342b67044f2281f07922ead9834b.setContent(html_5c5b1cd21fd24d149571d86b2da5b368);
+            
+
+            marker_13ed3175f00a487f967d49c3d7e2f346.bindPopup(popup_d23a342b67044f2281f07922ead9834b)
+            ;
+
+            
+        
+    
+        marker_13ed3175f00a487f967d49c3d7e2f346.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dc36b244a3494cf9ae7203145aaaacd2 = L.marker(
+            [-34.0303665, 18.441577],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_c09e5ff34e204c258a22a7161764de47 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0058c889266e4b1cb0954646435e9a09 = $(`<div id="html_0058c889266e4b1cb0954646435e9a09" style="width: 100.0%; height: 100.0%;">Suburb: Kreupelbosch      Distance from  V&A Waterfront: 13.603560201554794KM          Height above sea level(m): 44</div>`)[0];
+                popup_c09e5ff34e204c258a22a7161764de47.setContent(html_0058c889266e4b1cb0954646435e9a09);
+            
+
+            marker_dc36b244a3494cf9ae7203145aaaacd2.bindPopup(popup_c09e5ff34e204c258a22a7161764de47)
+            ;
+
+            
+        
+    
+        marker_dc36b244a3494cf9ae7203145aaaacd2.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b6b41c03f38c49a8848dd97cb96008ea = L.marker(
+            [-33.9281512, 18.3789695],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_472798d1b38e4a798bc5550080605447 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0e1f96be51dd41aba7cad1ff5a537a31 = $(`<div id="html_0e1f96be51dd41aba7cad1ff5a537a31" style="width: 100.0%; height: 100.0%;">Suburb: Bantry Bay      Distance from  V&A Waterfront: 5.334586749441424KM          Height above sea level(m): 44</div>`)[0];
+                popup_472798d1b38e4a798bc5550080605447.setContent(html_0e1f96be51dd41aba7cad1ff5a537a31);
+            
+
+            marker_b6b41c03f38c49a8848dd97cb96008ea.bindPopup(popup_472798d1b38e4a798bc5550080605447)
+            ;
+
+            
+        
+    
+        marker_b6b41c03f38c49a8848dd97cb96008ea.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2d4bf3aa4a0c4d3d9f5d1c999eb7b33d = L.marker(
+            [-33.93244045, 18.43275857242282],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_c8bd799fb130404aa58c72981ea9b9dc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9cfe86df15b345b7b4f60b2f0823d36b = $(`<div id="html_9cfe86df15b345b7b4f60b2f0823d36b" style="width: 100.0%; height: 100.0%;">Suburb: Zonnebloem       Distance from  V&A Waterfront: 3.3522569910146864KM          Height above sea level(m): 43</div>`)[0];
+                popup_c8bd799fb130404aa58c72981ea9b9dc.setContent(html_9cfe86df15b345b7b4f60b2f0823d36b);
+            
+
+            marker_2d4bf3aa4a0c4d3d9f5d1c999eb7b33d.bindPopup(popup_c8bd799fb130404aa58c72981ea9b9dc)
+            ;
+
+            
+        
+    
+        marker_2d4bf3aa4a0c4d3d9f5d1c999eb7b33d.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f03f9d84ec9c45648bff976f33e92bc7 = L.marker(
+            [-33.9025, 18.5869444],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_1a50890fdcb34e2393b54fac947bd31b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_97a76b53343f412797b344436331e466 = $(`<div id="html_97a76b53343f412797b344436331e466" style="width: 100.0%; height: 100.0%;">Suburb: Parow      Distance from  V&A Waterfront: 18.48053657767838KM          Height above sea level(m): 43</div>`)[0];
+                popup_1a50890fdcb34e2393b54fac947bd31b.setContent(html_97a76b53343f412797b344436331e466);
+            
+
+            marker_f03f9d84ec9c45648bff976f33e92bc7.bindPopup(popup_1a50890fdcb34e2393b54fac947bd31b)
+            ;
+
+            
+        
+    
+        marker_f03f9d84ec9c45648bff976f33e92bc7.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6d89c0a77c554fc7b731fb740a2c539b = L.marker(
+            [-33.9847222, 18.4625],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b8696646c6224199af250ad489f986ce = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a7e1d2b8f2c14a1990671a16f8771bf6 = $(`<div id="html_a7e1d2b8f2c14a1990671a16f8771bf6" style="width: 100.0%; height: 100.0%;">Suburb: Claremont      Distance from  V&A Waterfront: 9.763803094390385KM          Height above sea level(m): 43</div>`)[0];
+                popup_b8696646c6224199af250ad489f986ce.setContent(html_a7e1d2b8f2c14a1990671a16f8771bf6);
+            
+
+            marker_6d89c0a77c554fc7b731fb740a2c539b.bindPopup(popup_b8696646c6224199af250ad489f986ce)
+            ;
+
+            
+        
+    
+        marker_6d89c0a77c554fc7b731fb740a2c539b.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1c680372c91845479b2e89a4b81c3264 = L.marker(
+            [-33.9742832, 18.4572951],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_2adef2fcb3614e86ac1d41155f0f259b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_880eb916203f4949b08720342f86742d = $(`<div id="html_880eb916203f4949b08720342f86742d" style="width: 100.0%; height: 100.0%;">Suburb: Newlands      Distance from  V&A Waterfront: 8.520012691370725KM          Height above sea level(m): 42</div>`)[0];
+                popup_2adef2fcb3614e86ac1d41155f0f259b.setContent(html_880eb916203f4949b08720342f86742d);
+            
+
+            marker_1c680372c91845479b2e89a4b81c3264.bindPopup(popup_2adef2fcb3614e86ac1d41155f0f259b)
+            ;
+
+            
+        
+    
+        marker_1c680372c91845479b2e89a4b81c3264.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9e1eed342da24fa9a2df1787db169fa6 = L.marker(
+            [-33.8797222, 18.555],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_d63e0a6a177a4b4a819bc45b76b700ce = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3a2167814d62459d8bb8be675aa90596 = $(`<div id="html_3a2167814d62459d8bb8be675aa90596" style="width: 100.0%; height: 100.0%;">Suburb: Monte Vista      Distance from  V&A Waterfront: 15.133853328128293KM          Height above sea level(m): 41</div>`)[0];
+                popup_d63e0a6a177a4b4a819bc45b76b700ce.setContent(html_3a2167814d62459d8bb8be675aa90596);
+            
+
+            marker_9e1eed342da24fa9a2df1787db169fa6.bindPopup(popup_d63e0a6a177a4b4a819bc45b76b700ce)
+            ;
+
+            
+        
+    
+        marker_9e1eed342da24fa9a2df1787db169fa6.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7dbc9d3d4ede4315bd4af4bdfac808dd = L.marker(
+            [-33.9944444, 18.5988889],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_d994d3764c8944958503dc63d006f340 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f882b3caaf9240fea4a33dba63d19dda = $(`<div id="html_f882b3caaf9240fea4a33dba63d19dda" style="width: 100.0%; height: 100.0%;">Suburb: Crossroads      Distance from  V&A Waterfront: 22.017026795872944KM          Height above sea level(m): 41</div>`)[0];
+                popup_d994d3764c8944958503dc63d006f340.setContent(html_f882b3caaf9240fea4a33dba63d19dda);
+            
+
+            marker_7dbc9d3d4ede4315bd4af4bdfac808dd.bindPopup(popup_d994d3764c8944958503dc63d006f340)
+            ;
+
+            
+        
+    
+        marker_7dbc9d3d4ede4315bd4af4bdfac808dd.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b3622bd4f6864b8884499c1d0f05ca98 = L.marker(
+            [-34.0821129, 18.8492883],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_5ab8d6372a224588992fe6782a9da038 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_15fd38eab62b4cda94262d6a7ce8e903 = $(`<div id="html_15fd38eab62b4cda94262d6a7ce8e903" style="width: 100.0%; height: 100.0%;">Suburb: Somerset West      Distance from  V&A Waterfront: 51.24128964126786KM          Height above sea level(m): 39</div>`)[0];
+                popup_5ab8d6372a224588992fe6782a9da038.setContent(html_15fd38eab62b4cda94262d6a7ce8e903);
+            
+
+            marker_b3622bd4f6864b8884499c1d0f05ca98.bindPopup(popup_5ab8d6372a224588992fe6782a9da038)
+            ;
+
+            
+        
+    
+        marker_b3622bd4f6864b8884499c1d0f05ca98.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d8b17395d0fb44dca7f3d113c3f95ba2 = L.marker(
+            [-33.9869444, 18.5847222],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_2b55cd3b778e437989a1f9f4eeb01c6f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_94179fd0c59a4d319298a560978efffa = $(`<div id="html_94179fd0c59a4d319298a560978efffa" style="width: 100.0%; height: 100.0%;">Suburb: Nyanga      Distance from  V&A Waterfront: 20.25473362827068KM          Height above sea level(m): 38</div>`)[0];
+                popup_2b55cd3b778e437989a1f9f4eeb01c6f.setContent(html_94179fd0c59a4d319298a560978efffa);
+            
+
+            marker_d8b17395d0fb44dca7f3d113c3f95ba2.bindPopup(popup_2b55cd3b778e437989a1f9f4eeb01c6f)
+            ;
+
+            
+        
+    
+        marker_d8b17395d0fb44dca7f3d113c3f95ba2.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b1b600ad0222400693dcf0be710a7a87 = L.marker(
+            [-34.1305556, 18.3880556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_7ca58ae6289a4d3ea14c61724bb033e9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_10ba19e614744acdbe085a46a97ba9c2 = $(`<div id="html_10ba19e614744acdbe085a46a97ba9c2" style="width: 100.0%; height: 100.0%;">Suburb: Sunnydale      Distance from  V&A Waterfront: 24.25168522192694KM          Height above sea level(m): 36</div>`)[0];
+                popup_7ca58ae6289a4d3ea14c61724bb033e9.setContent(html_10ba19e614744acdbe085a46a97ba9c2);
+            
+
+            marker_b1b600ad0222400693dcf0be710a7a87.bindPopup(popup_7ca58ae6289a4d3ea14c61724bb033e9)
+            ;
+
+            
+        
+    
+        marker_b1b600ad0222400693dcf0be710a7a87.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6c17a53409894957af706712c4e653ca = L.marker(
+            [-33.98228295, 18.57957360219293],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_f7a3cc1b53174223a56f019bd62407ea = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_42c286543dd04b9ea2aff0cef21ad061 = $(`<div id="html_42c286543dd04b9ea2aff0cef21ad061" style="width: 100.0%; height: 100.0%;">Suburb: Gugulethu      Distance from  V&A Waterfront: 19.526326077141377KM          Height above sea level(m): 36</div>`)[0];
+                popup_f7a3cc1b53174223a56f019bd62407ea.setContent(html_42c286543dd04b9ea2aff0cef21ad061);
+            
+
+            marker_6c17a53409894957af706712c4e653ca.bindPopup(popup_f7a3cc1b53174223a56f019bd62407ea)
+            ;
+
+            
+        
+    
+        marker_6c17a53409894957af706712c4e653ca.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bc9b55eb70514f50a7c4c82d84dbb253 = L.marker(
+            [-34.0084042, 18.6919958],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_38f6610915874383b485ba3228eb3e72 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_89e195e7e4e443c48b06cbd66a751686 = $(`<div id="html_89e195e7e4e443c48b06cbd66a751686" style="width: 100.0%; height: 100.0%;">Suburb: Eersteriver      Distance from  V&A Waterfront: 32.132285824751854KM          Height above sea level(m): 36</div>`)[0];
+                popup_38f6610915874383b485ba3228eb3e72.setContent(html_89e195e7e4e443c48b06cbd66a751686);
+            
+
+            marker_bc9b55eb70514f50a7c4c82d84dbb253.bindPopup(popup_38f6610915874383b485ba3228eb3e72)
+            ;
+
+            
+        
+    
+        marker_bc9b55eb70514f50a7c4c82d84dbb253.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9bed9729a6304651b29ff1704ccf3076 = L.marker(
+            [-33.9352848, 18.3790703],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_695d2f91e3b64fa39e3f23e7fda68e1c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e3bd6df0e61c43559ea1dab0efdca106 = $(`<div id="html_e3bd6df0e61c43559ea1dab0efdca106" style="width: 100.0%; height: 100.0%;">Suburb: Clifton      Distance from  V&A Waterfront: 5.733079163158917KM          Height above sea level(m): 36</div>`)[0];
+                popup_695d2f91e3b64fa39e3f23e7fda68e1c.setContent(html_e3bd6df0e61c43559ea1dab0efdca106);
+            
+
+            marker_9bed9729a6304651b29ff1704ccf3076.bindPopup(popup_695d2f91e3b64fa39e3f23e7fda68e1c)
+            ;
+
+            
+        
+    
+        marker_9bed9729a6304651b29ff1704ccf3076.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b411a0b704044a1c99f50bb648ed3f85 = L.marker(
+            [-33.9243215, 18.4227835],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_70f2bfa3ca1c4ba3956c9f681951dd40 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ef516efb1dda42ef8450498b00a28708 = $(`<div id="html_ef516efb1dda42ef8450498b00a28708" style="width: 100.0%; height: 100.0%;">Suburb: Darling      Distance from  V&A Waterfront: 2.2297729629009195KM          Height above sea level(m): 35</div>`)[0];
+                popup_70f2bfa3ca1c4ba3956c9f681951dd40.setContent(html_ef516efb1dda42ef8450498b00a28708);
+            
+
+            marker_b411a0b704044a1c99f50bb648ed3f85.bindPopup(popup_70f2bfa3ca1c4ba3956c9f681951dd40)
+            ;
+
+            
+        
+    
+        marker_b411a0b704044a1c99f50bb648ed3f85.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9c59e213e7664365b2d90d36e5558e00 = L.marker(
+            [-33.9486111, 18.5758333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_a08195dbfda1486181970de82c63cbba = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4bbbdfa3f1c3482495b3b4d9a2e45ecd = $(`<div id="html_4bbbdfa3f1c3482495b3b4d9a2e45ecd" style="width: 100.0%; height: 100.0%;">Suburb: Bishop Lavis      Distance from  V&A Waterfront: 17.894682632334455KM          Height above sea level(m): 35</div>`)[0];
+                popup_a08195dbfda1486181970de82c63cbba.setContent(html_4bbbdfa3f1c3482495b3b4d9a2e45ecd);
+            
+
+            marker_9c59e213e7664365b2d90d36e5558e00.bindPopup(popup_a08195dbfda1486181970de82c63cbba)
+            ;
+
+            
+        
+    
+        marker_9c59e213e7664365b2d90d36e5558e00.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c33b843f2f174f13937bfbc9ab1ef330 = L.marker(
+            [-33.988850799999994, 18.47520463823568],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_5a28d5d5720e4020ae017917a7e2fc1f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d3bbb423623446a29be6650bc2198b09 = $(`<div id="html_d3bbb423623446a29be6650bc2198b09" style="width: 100.0%; height: 100.0%;">Suburb: Harfield Village      Distance from  V&A Waterfront: 10.867848760520664KM          Height above sea level(m): 35</div>`)[0];
+                popup_5a28d5d5720e4020ae017917a7e2fc1f.setContent(html_d3bbb423623446a29be6650bc2198b09);
+            
+
+            marker_c33b843f2f174f13937bfbc9ab1ef330.bindPopup(popup_5a28d5d5720e4020ae017917a7e2fc1f)
+            ;
+
+            
+        
+    
+        marker_c33b843f2f174f13937bfbc9ab1ef330.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b5d75d70f30f443bb55e95b80f1c5394 = L.marker(
+            [-34.0207728, 18.5791126],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_7a6d29f35da94840beda146cd57d3bba = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_36b93abdfbed424b9f30b09cb42d3aa1 = $(`<div id="html_36b93abdfbed424b9f30b09cb42d3aa1" style="width: 100.0%; height: 100.0%;">Suburb: Samora Machel      Distance from  V&A Waterfront: 21.530309624974034KM          Height above sea level(m): 33</div>`)[0];
+                popup_7a6d29f35da94840beda146cd57d3bba.setContent(html_36b93abdfbed424b9f30b09cb42d3aa1);
+            
+
+            marker_b5d75d70f30f443bb55e95b80f1c5394.bindPopup(popup_7a6d29f35da94840beda146cd57d3bba)
+            ;
+
+            
+        
+    
+        marker_b5d75d70f30f443bb55e95b80f1c5394.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f9fd0bbc543b4683b1115708b03921ed = L.marker(
+            [-33.9199608, 18.4202165],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_f4089f9be8884c6ea501de69e2400404 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eb12c8b18a674b27a73f9d01ab3fcf06 = $(`<div id="html_eb12c8b18a674b27a73f9d01ab3fcf06" style="width: 100.0%; height: 100.0%;">Suburb: Strand      Distance from  V&A Waterfront: 1.7592014609410127KM          Height above sea level(m): 32</div>`)[0];
+                popup_f4089f9be8884c6ea501de69e2400404.setContent(html_eb12c8b18a674b27a73f9d01ab3fcf06);
+            
+
+            marker_f9fd0bbc543b4683b1115708b03921ed.bindPopup(popup_f4089f9be8884c6ea501de69e2400404)
+            ;
+
+            
+        
+    
+        marker_f9fd0bbc543b4683b1115708b03921ed.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_534df8af27ac44b18b5f791a0a6fa520 = L.marker(
+            [-34.19747305, 18.375554903144497],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_aaa32e4fdb644c469653bab387ab9c9e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8d4c70860e80497d8dd6c5c757163d33 = $(`<div id="html_8d4c70860e80497d8dd6c5c757163d33" style="width: 100.0%; height: 100.0%;">Suburb: Scarborough       Distance from  V&A Waterfront: 31.44326291198902KM          Height above sea level(m): 32</div>`)[0];
+                popup_aaa32e4fdb644c469653bab387ab9c9e.setContent(html_8d4c70860e80497d8dd6c5c757163d33);
+            
+
+            marker_534df8af27ac44b18b5f791a0a6fa520.bindPopup(popup_aaa32e4fdb644c469653bab387ab9c9e)
+            ;
+
+            
+        
+    
+        marker_534df8af27ac44b18b5f791a0a6fa520.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_292e84b51bb242cf9abfdacc36277df4 = L.marker(
+            [-34.102778, 18.38],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_576f2b2a157c4362ad7cfdceea808500 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ce42c8cd2ed04bb2b652484f31154199 = $(`<div id="html_ce42c8cd2ed04bb2b652484f31154199" style="width: 100.0%; height: 100.0%;">Suburb: Noordhoek       Distance from  V&A Waterfront: 21.52960005528456KM          Height above sea level(m): 32</div>`)[0];
+                popup_576f2b2a157c4362ad7cfdceea808500.setContent(html_ce42c8cd2ed04bb2b652484f31154199);
+            
+
+            marker_292e84b51bb242cf9abfdacc36277df4.bindPopup(popup_576f2b2a157c4362ad7cfdceea808500)
+            ;
+
+            
+        
+    
+        marker_292e84b51bb242cf9abfdacc36277df4.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2de35441e94b4a49802c0417f48b9a96 = L.marker(
+            [-34.0356638, 18.4436978],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_af360eadef154800938c99d1165df385 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8b437eeee74644c6a201c34a56f48515 = $(`<div id="html_8b437eeee74644c6a201c34a56f48515" style="width: 100.0%; height: 100.0%;">Suburb: Bergvliet      Distance from  V&A Waterfront: 14.194949517119774KM          Height above sea level(m): 31</div>`)[0];
+                popup_af360eadef154800938c99d1165df385.setContent(html_8b437eeee74644c6a201c34a56f48515);
+            
+
+            marker_2de35441e94b4a49802c0417f48b9a96.bindPopup(popup_af360eadef154800938c99d1165df385)
+            ;
+
+            
+        
+    
+        marker_2de35441e94b4a49802c0417f48b9a96.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_aa62e79dc6324e639648191b77d9ef7b = L.marker(
+            [-33.9105228, 18.5691391],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_75f0e3d9dcb449259e808cf82c709d0c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_60753c50fe6d4948b5481902d2eb5278 = $(`<div id="html_60753c50fe6d4948b5481902d2eb5278" style="width: 100.0%; height: 100.0%;">Suburb: Elsie's River      Distance from  V&A Waterfront: 16.51808188034826KM          Height above sea level(m): 31</div>`)[0];
+                popup_75f0e3d9dcb449259e808cf82c709d0c.setContent(html_60753c50fe6d4948b5481902d2eb5278);
+            
+
+            marker_aa62e79dc6324e639648191b77d9ef7b.bindPopup(popup_75f0e3d9dcb449259e808cf82c709d0c)
+            ;
+
+            
+        
+    
+        marker_aa62e79dc6324e639648191b77d9ef7b.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_6157262425c44c3e8c36e907858ddbdf = L.marker(
+            [-33.8755672, 18.5399526],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_16784ac8172442a8aede4a95d3ef48f8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c79f819b3a9b4146bd7ab85240f9b09b = $(`<div id="html_c79f819b3a9b4146bd7ab85240f9b09b" style="width: 100.0%; height: 100.0%;">Suburb: Edgemead      Distance from  V&A Waterfront: 13.573815092596515KM          Height above sea level(m): 30</div>`)[0];
+                popup_16784ac8172442a8aede4a95d3ef48f8.setContent(html_c79f819b3a9b4146bd7ab85240f9b09b);
+            
+
+            marker_6157262425c44c3e8c36e907858ddbdf.bindPopup(popup_16784ac8172442a8aede4a95d3ef48f8)
+            ;
+
+            
+        
+    
+        marker_6157262425c44c3e8c36e907858ddbdf.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_58f7a701a00d41a1bffce45283b01cee = L.marker(
+            [-33.797336, 18.4610228],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_aa15730349fd4b39a09e2a2921073838 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d1c2c6c9e0254a0f9153711bd027e76b = $(`<div id="html_d1c2c6c9e0254a0f9153711bd027e76b" style="width: 100.0%; height: 100.0%;">Suburb: Bloubergstrand      Distance from  V&A Waterfront: 12.040941450448631KM          Height above sea level(m): 30</div>`)[0];
+                popup_aa15730349fd4b39a09e2a2921073838.setContent(html_d1c2c6c9e0254a0f9153711bd027e76b);
+            
+
+            marker_58f7a701a00d41a1bffce45283b01cee.bindPopup(popup_aa15730349fd4b39a09e2a2921073838)
+            ;
+
+            
+        
+    
+        marker_58f7a701a00d41a1bffce45283b01cee.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f34815f7ac9b4edfb9297f1eea2ed31b = L.marker(
+            [-33.8594444, 18.5411111],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_31c998c53e12415fbaabef6449dd07a5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a8531ea0166a4b8c8f175eed13d2a4d4 = $(`<div id="html_a8531ea0166a4b8c8f175eed13d2a4d4" style="width: 100.0%; height: 100.0%;">Suburb: Bothasig      Distance from  V&A Waterfront: 14.160337675482776KM          Height above sea level(m): 30</div>`)[0];
+                popup_31c998c53e12415fbaabef6449dd07a5.setContent(html_a8531ea0166a4b8c8f175eed13d2a4d4);
+            
+
+            marker_f34815f7ac9b4edfb9297f1eea2ed31b.bindPopup(popup_31c998c53e12415fbaabef6449dd07a5)
+            ;
+
+            
+        
+    
+        marker_f34815f7ac9b4edfb9297f1eea2ed31b.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e9338a684c95468480c49cb62196ae89 = L.marker(
+            [-34.137645, 18.42467228851848],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_5c2437ac60ca4b66a03fc85b878805c5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e9e7db7901664f6cbbd6e09cbcd9ca4c = $(`<div id="html_e9e7db7901664f6cbbd6e09cbcd9ca4c" style="width: 100.0%; height: 100.0%;">Suburb: Fish Hoek      Distance from  V&A Waterfront: 24.72691524986274KM          Height above sea level(m): 30</div>`)[0];
+                popup_5c2437ac60ca4b66a03fc85b878805c5.setContent(html_e9e7db7901664f6cbbd6e09cbcd9ca4c);
+            
+
+            marker_e9338a684c95468480c49cb62196ae89.bindPopup(popup_5c2437ac60ca4b66a03fc85b878805c5)
+            ;
+
+            
+        
+    
+        marker_e9338a684c95468480c49cb62196ae89.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7fda06f91b1d490197560bf8baafc504 = L.marker(
+            [-34.0111953, 18.5637724],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_146d6bdc44024d0db8af3553d5dffb98 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_a0cacb62c97e45d29b8d69585a8cb7ef = $(`<div id="html_a0cacb62c97e45d29b8d69585a8cb7ef" style="width: 100.0%; height: 100.0%;">Suburb: Philippi      Distance from  V&A Waterfront: 19.55501429118924KM          Height above sea level(m): 27</div>`)[0];
+                popup_146d6bdc44024d0db8af3553d5dffb98.setContent(html_a0cacb62c97e45d29b8d69585a8cb7ef);
+            
+
+            marker_7fda06f91b1d490197560bf8baafc504.bindPopup(popup_146d6bdc44024d0db8af3553d5dffb98)
+            ;
+
+            
+        
+    
+        marker_7fda06f91b1d490197560bf8baafc504.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_53505de819324bf1b7ddfa385159856c = L.marker(
+            [-33.9502778, 18.5655556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_73db1830575248c9a5f25d4dc5554f40 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d05a74e500684e3699a0a701837e551a = $(`<div id="html_d05a74e500684e3699a0a701837e551a" style="width: 100.0%; height: 100.0%;">Suburb: Kalksteenfontein      Distance from  V&A Waterfront: 16.847017385665698KM          Height above sea level(m): 27</div>`)[0];
+                popup_73db1830575248c9a5f25d4dc5554f40.setContent(html_d05a74e500684e3699a0a701837e551a);
+            
+
+            marker_53505de819324bf1b7ddfa385159856c.bindPopup(popup_73db1830575248c9a5f25d4dc5554f40)
+            ;
+
+            
+        
+    
+        marker_53505de819324bf1b7ddfa385159856c.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_5b60fc0c27a64d9c98ffc2f9d5b9302a = L.marker(
+            [-34.1595402, 18.4284987],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_810cb4e8f7934ce98b8efab4db56946d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7fc393b748d24cbe828951eed014f9c8 = $(`<div id="html_7fc393b748d24cbe828951eed014f9c8" style="width: 100.0%; height: 100.0%;">Suburb: Glencairn      Distance from  V&A Waterfront: 27.046362515200222KM          Height above sea level(m): 26</div>`)[0];
+                popup_810cb4e8f7934ce98b8efab4db56946d.setContent(html_7fc393b748d24cbe828951eed014f9c8);
+            
+
+            marker_5b60fc0c27a64d9c98ffc2f9d5b9302a.bindPopup(popup_810cb4e8f7934ce98b8efab4db56946d)
+            ;
+
+            
+        
+    
+        marker_5b60fc0c27a64d9c98ffc2f9d5b9302a.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e8dc649a23da4a07bb00d03530d42f86 = L.marker(
+            [-33.9066667, 18.5491667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_cec2b87198494831864d387752110f65 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5b6b0db16c834ec8bcf74c1c0c0dfbf6 = $(`<div id="html_5b6b0db16c834ec8bcf74c1c0c0dfbf6" style="width: 100.0%; height: 100.0%;">Suburb: Goodwood      Distance from  V&A Waterfront: 14.284084494788308KM          Height above sea level(m): 26</div>`)[0];
+                popup_cec2b87198494831864d387752110f65.setContent(html_5b6b0db16c834ec8bcf74c1c0c0dfbf6);
+            
+
+            marker_e8dc649a23da4a07bb00d03530d42f86.bindPopup(popup_cec2b87198494831864d387752110f65)
+            ;
+
+            
+        
+    
+        marker_e8dc649a23da4a07bb00d03530d42f86.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_bb36a2d498964b2aa66b0e0649856d33 = L.marker(
+            [-34.0405905, 18.6674201],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_724a0e19db014276bedd59eb5b6894a0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5c65e21418864b45a12a4d7642c216a0 = $(`<div id="html_5c65e21418864b45a12a4d7642c216a0" style="width: 100.0%; height: 100.0%;">Suburb: Khayelitsha      Distance from  V&A Waterfront: 31.013465329847328KM          Height above sea level(m): 25</div>`)[0];
+                popup_724a0e19db014276bedd59eb5b6894a0.setContent(html_5c65e21418864b45a12a4d7642c216a0);
+            
+
+            marker_bb36a2d498964b2aa66b0e0649856d33.bindPopup(popup_724a0e19db014276bedd59eb5b6894a0)
+            ;
+
+            
+        
+    
+        marker_bb36a2d498964b2aa66b0e0649856d33.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dc8e6e72b948439289a5fd2d7ace07da = L.marker(
+            [-34.0558333, 18.7863889],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_ee43fda8a3db4480869fbfe47454bb8f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b2d0641b95e24596a12b153ca779d254 = $(`<div id="html_b2d0641b95e24596a12b153ca779d254" style="width: 100.0%; height: 100.0%;">Suburb: Firgrove      Distance from  V&A Waterfront: 43.72012556024963KM          Height above sea level(m): 25</div>`)[0];
+                popup_ee43fda8a3db4480869fbfe47454bb8f.setContent(html_b2d0641b95e24596a12b153ca779d254);
+            
+
+            marker_dc8e6e72b948439289a5fd2d7ace07da.bindPopup(popup_ee43fda8a3db4480869fbfe47454bb8f)
+            ;
+
+            
+        
+    
+        marker_dc8e6e72b948439289a5fd2d7ace07da.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1b6d583778ef404c9572a4dc7ad423b3 = L.marker(
+            [-34.050556, 18.618056],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b1a71e643f4d416894d0d6a7c5bd82e3 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d769d6e16ac94c48aadc4755be854907 = $(`<div id="html_d769d6e16ac94c48aadc4755be854907" style="width: 100.0%; height: 100.0%;">Suburb: Mitchells Plain      Distance from  V&A Waterfront: 26.878135828244087KM          Height above sea level(m): 25</div>`)[0];
+                popup_b1a71e643f4d416894d0d6a7c5bd82e3.setContent(html_d769d6e16ac94c48aadc4755be854907);
+            
+
+            marker_1b6d583778ef404c9572a4dc7ad423b3.bindPopup(popup_b1a71e643f4d416894d0d6a7c5bd82e3)
+            ;
+
+            
+        
+    
+        marker_1b6d583778ef404c9572a4dc7ad423b3.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3c7d468de0ae4b2b8dbcc19a22c4b237 = L.marker(
+            [-33.9341693, 18.5544428],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_87ee87be95644edcb0db1ff8430eb5d2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_b4a855fbd89d45dd8a0ad0a1587bb04a = $(`<div id="html_b4a855fbd89d45dd8a0ad0a1587bb04a" style="width: 100.0%; height: 100.0%;">Suburb: Epping      Distance from  V&A Waterfront: 15.218698177059048KM          Height above sea level(m): 25</div>`)[0];
+                popup_87ee87be95644edcb0db1ff8430eb5d2.setContent(html_b4a855fbd89d45dd8a0ad0a1587bb04a);
+            
+
+            marker_3c7d468de0ae4b2b8dbcc19a22c4b237.bindPopup(popup_87ee87be95644edcb0db1ff8430eb5d2)
+            ;
+
+            
+        
+    
+        marker_3c7d468de0ae4b2b8dbcc19a22c4b237.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_89a8c1866d144f5abd76097502b0a709 = L.marker(
+            [-33.9151314, 18.419805662109376],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b3344ca37a794d79a1796840d9aa294c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2c0ecdf6785942d58226cc7c4476491e = $(`<div id="html_2c0ecdf6785942d58226cc7c4476491e" style="width: 100.0%; height: 100.0%;">Suburb: De Waterkant      Distance from  V&A Waterfront: 1.2531006987931164KM          Height above sea level(m): 25</div>`)[0];
+                popup_b3344ca37a794d79a1796840d9aa294c.setContent(html_2c0ecdf6785942d58226cc7c4476491e);
+            
+
+            marker_89a8c1866d144f5abd76097502b0a709.bindPopup(popup_b3344ca37a794d79a1796840d9aa294c)
+            ;
+
+            
+        
+    
+        marker_89a8c1866d144f5abd76097502b0a709.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1c41fbe8c4d04334996d00ff732fd2e8 = L.marker(
+            [-33.9963409, 18.5068931],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_6cc0f32432ef438bb300c12486d08322 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_36de511eb1114b5888d19574f5b95a7d = $(`<div id="html_36de511eb1114b5888d19574f5b95a7d" style="width: 100.0%; height: 100.0%;">Suburb: Lansdowne      Distance from  V&A Waterfront: 13.713716790734109KM          Height above sea level(m): 25</div>`)[0];
+                popup_6cc0f32432ef438bb300c12486d08322.setContent(html_36de511eb1114b5888d19574f5b95a7d);
+            
+
+            marker_1c41fbe8c4d04334996d00ff732fd2e8.bindPopup(popup_6cc0f32432ef438bb300c12486d08322)
+            ;
+
+            
+        
+    
+        marker_1c41fbe8c4d04334996d00ff732fd2e8.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ac0c9e2593c54219baebe117074159e9 = L.marker(
+            [-34.02, 18.4772222],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_d987606e5c46469d899aa99633271608 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9c18d978afa6490a83ec7eaee5cb04e4 = $(`<div id="html_9c18d978afa6490a83ec7eaee5cb04e4" style="width: 100.0%; height: 100.0%;">Suburb: Plumstead      Distance from  V&A Waterfront: 13.81932240638601KM          Height above sea level(m): 25</div>`)[0];
+                popup_d987606e5c46469d899aa99633271608.setContent(html_9c18d978afa6490a83ec7eaee5cb04e4);
+            
+
+            marker_ac0c9e2593c54219baebe117074159e9.bindPopup(popup_d987606e5c46469d899aa99633271608)
+            ;
+
+            
+        
+    
+        marker_ac0c9e2593c54219baebe117074159e9.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d596d4b1eee846ef993bd696e53fdc42 = L.marker(
+            [-33.951612, 18.552794065056574],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_f153694f73e446ddae07f2f970e52dd9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f422c10a3e7149bc9072ca116db27233 = $(`<div id="html_f422c10a3e7149bc9072ca116db27233" style="width: 100.0%; height: 100.0%;">Suburb: Bonteheuwel      Distance from  V&A Waterfront: 15.541987421470415KM          Height above sea level(m): 24</div>`)[0];
+                popup_f153694f73e446ddae07f2f970e52dd9.setContent(html_f422c10a3e7149bc9072ca116db27233);
+            
+
+            marker_d596d4b1eee846ef993bd696e53fdc42.bindPopup(popup_f153694f73e446ddae07f2f970e52dd9)
+            ;
+
+            
+        
+    
+        marker_d596d4b1eee846ef993bd696e53fdc42.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d7ccd67907484e43a1342ba94166f2f7 = L.marker(
+            [-33.9369444, 18.4683333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_7752ad4a08b242bb9ede9fb9c870faf5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_80e7b7c204704f1790b1e09f1dc08c43 = $(`<div id="html_80e7b7c204704f1790b1e09f1dc08c43" style="width: 100.0%; height: 100.0%;">Suburb: Observatory      Distance from  V&A Waterfront: 6.371610421755879KM          Height above sea level(m): 24</div>`)[0];
+                popup_7752ad4a08b242bb9ede9fb9c870faf5.setContent(html_80e7b7c204704f1790b1e09f1dc08c43);
+            
+
+            marker_d7ccd67907484e43a1342ba94166f2f7.bindPopup(popup_7752ad4a08b242bb9ede9fb9c870faf5)
+            ;
+
+            
+        
+    
+        marker_d7ccd67907484e43a1342ba94166f2f7.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4a75027fcc2748a09923a29decd8d0b4 = L.marker(
+            [-33.9680556, 18.4877778],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_39b6c9af56954c5389dbfab7dca4510e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_732669b6047f476b8b9ca33657f25527 = $(`<div id="html_732669b6047f476b8b9ca33657f25527" style="width: 100.0%; height: 100.0%;">Suburb: Rondebosch      Distance from  V&A Waterfront: 10.1101075381393KM          Height above sea level(m): 24</div>`)[0];
+                popup_39b6c9af56954c5389dbfab7dca4510e.setContent(html_732669b6047f476b8b9ca33657f25527);
+            
+
+            marker_4a75027fcc2748a09923a29decd8d0b4.bindPopup(popup_39b6c9af56954c5389dbfab7dca4510e)
+            ;
+
+            
+        
+    
+        marker_4a75027fcc2748a09923a29decd8d0b4.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f4bb7564563147758f47e12eb4be2a1c = L.marker(
+            [-33.9954688, 18.4992116],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_bb66c372af2941e7ae69a4de53183b61 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_18a1093b894a4322a50c59bbbe57a1ec = $(`<div id="html_18a1093b894a4322a50c59bbbe57a1ec" style="width: 100.0%; height: 100.0%;">Suburb: Kenwyn      Distance from  V&A Waterfront: 13.062892857723389KM          Height above sea level(m): 23</div>`)[0];
+                popup_bb66c372af2941e7ae69a4de53183b61.setContent(html_18a1093b894a4322a50c59bbbe57a1ec);
+            
+
+            marker_f4bb7564563147758f47e12eb4be2a1c.bindPopup(popup_bb66c372af2941e7ae69a4de53183b61)
+            ;
+
+            
+        
+    
+        marker_f4bb7564563147758f47e12eb4be2a1c.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_918d21ef8fb643cf9d09eb3e2257a0df = L.marker(
+            [-33.9305556, 18.4472222],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_e792c07db0854a5ba66ccd109f69ebfb = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4b822eaf34744a5283d575c117f6a091 = $(`<div id="html_4b822eaf34744a5283d575c117f6a091" style="width: 100.0%; height: 100.0%;">Suburb: Woodstock       Distance from  V&A Waterfront: 4.1154044481022645KM          Height above sea level(m): 22</div>`)[0];
+                popup_e792c07db0854a5ba66ccd109f69ebfb.setContent(html_4b822eaf34744a5283d575c117f6a091);
+            
+
+            marker_918d21ef8fb643cf9d09eb3e2257a0df.bindPopup(popup_e792c07db0854a5ba66ccd109f69ebfb)
+            ;
+
+            
+        
+    
+        marker_918d21ef8fb643cf9d09eb3e2257a0df.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_73783278e0e24fea86925b0507836574 = L.marker(
+            [-33.9483333, 18.4741667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_1b3e19aa29e745f8b024772d7665693f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_1e9fd47fdc7f467cb053e929b6cad6bb = $(`<div id="html_1e9fd47fdc7f467cb053e929b6cad6bb" style="width: 100.0%; height: 100.0%;">Suburb: Mowbray      Distance from  V&A Waterfront: 7.606129318109809KM          Height above sea level(m): 22</div>`)[0];
+                popup_1b3e19aa29e745f8b024772d7665693f.setContent(html_1e9fd47fdc7f467cb053e929b6cad6bb);
+            
+
+            marker_73783278e0e24fea86925b0507836574.bindPopup(popup_1b3e19aa29e745f8b024772d7665693f)
+            ;
+
+            
+        
+    
+        marker_73783278e0e24fea86925b0507836574.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_401a74ca60d34563927eb38e775d3ea8 = L.marker(
+            [-34.1244047, 18.429309632304506],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b2c05b4f34514facadac3a41d7632c1b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_db72f6d21a6941a68b8494ce0a51b9dd = $(`<div id="html_db72f6d21a6941a68b8494ce0a51b9dd" style="width: 100.0%; height: 100.0%;">Suburb: Clovelly      Distance from  V&A Waterfront: 23.34537084113319KM          Height above sea level(m): 22</div>`)[0];
+                popup_b2c05b4f34514facadac3a41d7632c1b.setContent(html_db72f6d21a6941a68b8494ce0a51b9dd);
+            
+
+            marker_401a74ca60d34563927eb38e775d3ea8.bindPopup(popup_b2c05b4f34514facadac3a41d7632c1b)
+            ;
+
+            
+        
+    
+        marker_401a74ca60d34563927eb38e775d3ea8.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_621994e00db747dcb9bbee91227d32cd = L.marker(
+            [-34.0031429, 18.5156344],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_802920551cec48a4b2bd89d05ab6ca62 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_06436b338a644c0b851bc7742807cdb6 = $(`<div id="html_06436b338a644c0b851bc7742807cdb6" style="width: 100.0%; height: 100.0%;">Suburb: Strandfontein      Distance from  V&A Waterfront: 14.90711801073907KM          Height above sea level(m): 21</div>`)[0];
+                popup_802920551cec48a4b2bd89d05ab6ca62.setContent(html_06436b338a644c0b851bc7742807cdb6);
+            
+
+            marker_621994e00db747dcb9bbee91227d32cd.bindPopup(popup_802920551cec48a4b2bd89d05ab6ca62)
+            ;
+
+            
+        
+    
+        marker_621994e00db747dcb9bbee91227d32cd.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d2be53b22d4544ccbfb355982563c40f = L.marker(
+            [-33.9897222, 18.5544444],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b7c0a878c6074cbea93d8e3e670c2f5a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0d9a10d80c77453bb0a6e5b5bad3ac27 = $(`<div id="html_0d9a10d80c77453bb0a6e5b5bad3ac27" style="width: 100.0%; height: 100.0%;">Suburb: Manenberg      Distance from  V&A Waterfront: 17.43799931116547KM          Height above sea level(m): 21</div>`)[0];
+                popup_b7c0a878c6074cbea93d8e3e670c2f5a.setContent(html_0d9a10d80c77453bb0a6e5b5bad3ac27);
+            
+
+            marker_d2be53b22d4544ccbfb355982563c40f.bindPopup(popup_b7c0a878c6074cbea93d8e3e670c2f5a)
+            ;
+
+            
+        
+    
+        marker_d2be53b22d4544ccbfb355982563c40f.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8773401b85374b81bb26c490d9eebfbe = L.marker(
+            [-33.80456195, 18.509348967369892],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_c808a55350414580904797fbd4fbf97f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3bec49e415a74d239a8550c02a8cbc26 = $(`<div id="html_3bec49e415a74d239a8550c02a8cbc26" style="width: 100.0%; height: 100.0%;">Suburb: Parklands      Distance from  V&A Waterfront: 14.33538024496385KM          Height above sea level(m): 20</div>`)[0];
+                popup_c808a55350414580904797fbd4fbf97f.setContent(html_3bec49e415a74d239a8550c02a8cbc26);
+            
+
+            marker_8773401b85374b81bb26c490d9eebfbe.bindPopup(popup_c808a55350414580904797fbd4fbf97f)
+            ;
+
+            
+        
+    
+        marker_8773401b85374b81bb26c490d9eebfbe.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_efa37a5d277c4eaf812c4e3a46d4be0e = L.marker(
+            [-33.9922222, 18.5330556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_a6ad6fd7d26d407db3bedfddd312bec8 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_de7aa405a5ff48c7b829cd01ab954401 = $(`<div id="html_de7aa405a5ff48c7b829cd01ab954401" style="width: 100.0%; height: 100.0%;">Suburb: Hanover Park      Distance from  V&A Waterfront: 15.617673961770763KM          Height above sea level(m): 20</div>`)[0];
+                popup_a6ad6fd7d26d407db3bedfddd312bec8.setContent(html_de7aa405a5ff48c7b829cd01ab954401);
+            
+
+            marker_efa37a5d277c4eaf812c4e3a46d4be0e.bindPopup(popup_a6ad6fd7d26d407db3bedfddd312bec8)
+            ;
+
+            
+        
+    
+        marker_efa37a5d277c4eaf812c4e3a46d4be0e.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_142f537f6cda4cbeabe1e708798a2595 = L.marker(
+            [-34.0608333, 18.4416667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_1173c1651f474fcba073fd6971e0aed9 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5d0b032bf4b14ea19b81d3bbcca9d7dc = $(`<div id="html_5d0b032bf4b14ea19b81d3bbcca9d7dc" style="width: 100.0%; height: 100.0%;">Suburb: Tokai      Distance from  V&A Waterfront: 16.780907002416267KM          Height above sea level(m): 20</div>`)[0];
+                popup_1173c1651f474fcba073fd6971e0aed9.setContent(html_5d0b032bf4b14ea19b81d3bbcca9d7dc);
+            
+
+            marker_142f537f6cda4cbeabe1e708798a2595.bindPopup(popup_1173c1651f474fcba073fd6971e0aed9)
+            ;
+
+            
+        
+    
+        marker_142f537f6cda4cbeabe1e708798a2595.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_95b7a81e7e0a444bb8ac9d552bf75472 = L.marker(
+            [-34.03597935, 18.46751262949318],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_49305e34c45b41cbb6fcf6d1039bfaf5 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e1ca1cddd3dd4190a508a15d372d06ef = $(`<div id="html_e1ca1cddd3dd4190a508a15d372d06ef" style="width: 100.0%; height: 100.0%;">Suburb: Diep River      Distance from  V&A Waterfront: 14.930795610297437KM          Height above sea level(m): 19</div>`)[0];
+                popup_49305e34c45b41cbb6fcf6d1039bfaf5.setContent(html_e1ca1cddd3dd4190a508a15d372d06ef);
+            
+
+            marker_95b7a81e7e0a444bb8ac9d552bf75472.bindPopup(popup_49305e34c45b41cbb6fcf6d1039bfaf5)
+            ;
+
+            
+        
+    
+        marker_95b7a81e7e0a444bb8ac9d552bf75472.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f1f3846ba3444d5d8e5c9083e39134de = L.marker(
+            [-33.928485, 18.4916241],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_28981b239bcd4e97b281f30c3a81f457 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_8c2fc5683da7470d8e5f7b47e166d022 = $(`<div id="html_8c2fc5683da7470d8e5f7b47e166d022" style="width: 100.0%; height: 100.0%;">Suburb: Ndabeni      Distance from  V&A Waterfront: 8.317022706791743KM          Height above sea level(m): 19</div>`)[0];
+                popup_28981b239bcd4e97b281f30c3a81f457.setContent(html_8c2fc5683da7470d8e5f7b47e166d022);
+            
+
+            marker_f1f3846ba3444d5d8e5c9083e39134de.bindPopup(popup_28981b239bcd4e97b281f30c3a81f457)
+            ;
+
+            
+        
+    
+        marker_f1f3846ba3444d5d8e5c9083e39134de.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_79283d183f5a4ad9af34f7b8b6354e33 = L.marker(
+            [-33.9317008, 18.4610056],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_310e1876217a430d8068bbc54305619d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_28074d0176a3425f8b26af65ffcf4e45 = $(`<div id="html_28074d0176a3425f8b26af65ffcf4e45" style="width: 100.0%; height: 100.0%;">Suburb: Salt River      Distance from  V&A Waterfront: 5.386861844493312KM          Height above sea level(m): 19</div>`)[0];
+                popup_310e1876217a430d8068bbc54305619d.setContent(html_28074d0176a3425f8b26af65ffcf4e45);
+            
+
+            marker_79283d183f5a4ad9af34f7b8b6354e33.bindPopup(popup_310e1876217a430d8068bbc54305619d)
+            ;
+
+            
+        
+    
+        marker_79283d183f5a4ad9af34f7b8b6354e33.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_edb0c1bb284f48b9809d690689526db6 = L.marker(
+            [-33.9236111, 18.5352778],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_8f98f37d9af64365876a6caa1e5b53c6 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c1dee66d65744513a26044f249167d57 = $(`<div id="html_c1dee66d65744513a26044f249167d57" style="width: 100.0%; height: 100.0%;">Suburb: Thornton      Distance from  V&A Waterfront: 12.914260764961744KM          Height above sea level(m): 19</div>`)[0];
+                popup_8f98f37d9af64365876a6caa1e5b53c6.setContent(html_c1dee66d65744513a26044f249167d57);
+            
+
+            marker_edb0c1bb284f48b9809d690689526db6.bindPopup(popup_8f98f37d9af64365876a6caa1e5b53c6)
+            ;
+
+            
+        
+    
+        marker_edb0c1bb284f48b9809d690689526db6.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_558c2d4f38274cef83597e8dc3f8f002 = L.marker(
+            [-33.9791667, 18.4983333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_23e39bffdcb445f9b840f8b1ad6ea6a1 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_405c9829c0d44c2aa6b321b500d2bf49 = $(`<div id="html_405c9829c0d44c2aa6b321b500d2bf49" style="width: 100.0%; height: 100.0%;">Suburb: Rondebosch East      Distance from  V&A Waterfront: 11.767282164029664KM          Height above sea level(m): 19</div>`)[0];
+                popup_23e39bffdcb445f9b840f8b1ad6ea6a1.setContent(html_405c9829c0d44c2aa6b321b500d2bf49);
+            
+
+            marker_558c2d4f38274cef83597e8dc3f8f002.bindPopup(popup_23e39bffdcb445f9b840f8b1ad6ea6a1)
+            ;
+
+            
+        
+    
+        marker_558c2d4f38274cef83597e8dc3f8f002.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3d3700cdee5a453d8ea2d2a2d6cc8631 = L.marker(
+            [-34.0047222, 18.5186111],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_4567366ecabe43c4b09b8a1e6ef9b37a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ac6fc7ef4fed4728b531b873296e67e4 = $(`<div id="html_ac6fc7ef4fed4728b531b873296e67e4" style="width: 100.0%; height: 100.0%;">Suburb: Wetton      Distance from  V&A Waterfront: 15.259432788534992KM          Height above sea level(m): 19</div>`)[0];
+                popup_4567366ecabe43c4b09b8a1e6ef9b37a.setContent(html_ac6fc7ef4fed4728b531b873296e67e4);
+            
+
+            marker_3d3700cdee5a453d8ea2d2a2d6cc8631.bindPopup(popup_4567366ecabe43c4b09b8a1e6ef9b37a)
+            ;
+
+            
+        
+    
+        marker_3d3700cdee5a453d8ea2d2a2d6cc8631.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7977731b4ba84123a9588c1d89919ac5 = L.marker(
+            [-34.0131526, 18.5091531],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_9e35ca64af2b40d89bfc9822963d7616 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_e67ec4f0d2164d9ea6cadc6b14c5883d = $(`<div id="html_e67ec4f0d2164d9ea6cadc6b14c5883d" style="width: 100.0%; height: 100.0%;">Suburb: Ottery      Distance from  V&A Waterfront: 15.194999745973647KM          Height above sea level(m): 18</div>`)[0];
+                popup_9e35ca64af2b40d89bfc9822963d7616.setContent(html_e67ec4f0d2164d9ea6cadc6b14c5883d);
+            
+
+            marker_7977731b4ba84123a9588c1d89919ac5.bindPopup(popup_9e35ca64af2b40d89bfc9822963d7616)
+            ;
+
+            
+        
+    
+        marker_7977731b4ba84123a9588c1d89919ac5.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_f450432adf364e11b925e0b5f26c1e1a = L.marker(
+            [-33.80171215, 18.488506457244622],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_c3abd8180a7c4919b246de0595494d21 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cff40ab46a734cfda7347d528ed8950e = $(`<div id="html_cff40ab46a734cfda7347d528ed8950e" style="width: 100.0%; height: 100.0%;">Suburb: Valhalla Park      Distance from  V&A Waterfront: 13.098560057082162KM          Height above sea level(m): 18</div>`)[0];
+                popup_c3abd8180a7c4919b246de0595494d21.setContent(html_cff40ab46a734cfda7347d528ed8950e);
+            
+
+            marker_f450432adf364e11b925e0b5f26c1e1a.bindPopup(popup_c3abd8180a7c4919b246de0595494d21)
+            ;
+
+            
+        
+    
+        marker_f450432adf364e11b925e0b5f26c1e1a.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_27e04bcce7d642488fc5fb889f901c4e = L.marker(
+            [-33.9225, 18.4930556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_d8ebe6008fab4e8bb9c6a7ebd0ea0927 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_2113edd663ea4d32863c56e0215f0dcf = $(`<div id="html_2113edd663ea4d32863c56e0215f0dcf" style="width: 100.0%; height: 100.0%;">Suburb: Maitland      Distance from  V&A Waterfront: 8.291631712072402KM          Height above sea level(m): 18</div>`)[0];
+                popup_d8ebe6008fab4e8bb9c6a7ebd0ea0927.setContent(html_2113edd663ea4d32863c56e0215f0dcf);
+            
+
+            marker_27e04bcce7d642488fc5fb889f901c4e.bindPopup(popup_d8ebe6008fab4e8bb9c6a7ebd0ea0927)
+            ;
+
+            
+        
+    
+        marker_27e04bcce7d642488fc5fb889f901c4e.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_12c4c6f742184beeaa98a78363735218 = L.marker(
+            [-33.9144444, 18.5069444],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b61f0351cd5d4807b7371b03242b0e10 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_cc5e777201114ab8a80460d20b1acc7c = $(`<div id="html_cc5e777201114ab8a80460d20b1acc7c" style="width: 100.0%; height: 100.0%;">Suburb: Kensington      Distance from  V&A Waterfront: 9.656621283676413KM          Height above sea level(m): 18</div>`)[0];
+                popup_b61f0351cd5d4807b7371b03242b0e10.setContent(html_cc5e777201114ab8a80460d20b1acc7c);
+            
+
+            marker_12c4c6f742184beeaa98a78363735218.bindPopup(popup_b61f0351cd5d4807b7371b03242b0e10)
+            ;
+
+            
+        
+    
+        marker_12c4c6f742184beeaa98a78363735218.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3bfbc5df5734405d93dc39be56c8d723 = L.marker(
+            [-34.0620251, 18.5281164],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_0ace63d23d914788b7a5c0d4d92c0e6a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_576621bbfdc647428fadaeb212522a1a = $(`<div id="html_576621bbfdc647428fadaeb212522a1a" style="width: 100.0%; height: 100.0%;">Suburb: Pelican Park      Distance from  V&A Waterfront: 20.56161530472595KM          Height above sea level(m): 17</div>`)[0];
+                popup_0ace63d23d914788b7a5c0d4d92c0e6a.setContent(html_576621bbfdc647428fadaeb212522a1a);
+            
+
+            marker_3bfbc5df5734405d93dc39be56c8d723.bindPopup(popup_0ace63d23d914788b7a5c0d4d92c0e6a)
+            ;
+
+            
+        
+    
+        marker_3bfbc5df5734405d93dc39be56c8d723.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_981fd42d36ca4f2eabaa862acd641936 = L.marker(
+            [-33.9775, 18.5033333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_861ead66edbc432fbf20ee005b5eef3f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_76a834065f6c407aa0552741f5e59ef7 = $(`<div id="html_76a834065f6c407aa0552741f5e59ef7" style="width: 100.0%; height: 100.0%;">Suburb: Crawford      Distance from  V&A Waterfront: 12.065929372969546KM          Height above sea level(m): 17</div>`)[0];
+                popup_861ead66edbc432fbf20ee005b5eef3f.setContent(html_76a834065f6c407aa0552741f5e59ef7);
+            
+
+            marker_981fd42d36ca4f2eabaa862acd641936.bindPopup(popup_861ead66edbc432fbf20ee005b5eef3f)
+            ;
+
+            
+        
+    
+        marker_981fd42d36ca4f2eabaa862acd641936.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_596b578fd79548fab2f0ee12bac91347 = L.marker(
+            [-34.12717245, 18.44683161699767],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_366a77e1f6f9458ca3e95f4f474fe84d = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_0271253bdac64a5a99d25c2a24bfd4cd = $(`<div id="html_0271253bdac64a5a99d25c2a24bfd4cd" style="width: 100.0%; height: 100.0%;">Suburb: Kalk Bay      Distance from  V&A Waterfront: 23.794173650267595KM          Height above sea level(m): 16</div>`)[0];
+                popup_366a77e1f6f9458ca3e95f4f474fe84d.setContent(html_0271253bdac64a5a99d25c2a24bfd4cd);
+            
+
+            marker_596b578fd79548fab2f0ee12bac91347.bindPopup(popup_366a77e1f6f9458ca3e95f4f474fe84d)
+            ;
+
+            
+        
+    
+        marker_596b578fd79548fab2f0ee12bac91347.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_02a6dc1504eb4827918a441f3492375f = L.marker(
+            [-34.1611249, 18.8686867],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_5883f886199e4a828ae91227f9026dda = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_97b68521eaf34844aaac142b127f26fe = $(`<div id="html_97b68521eaf34844aaac142b127f26fe" style="width: 100.0%; height: 100.0%;">Suburb: Gordon's Bay      Distance from  V&A Waterfront: 56.734677597618344KM          Height above sea level(m): 16</div>`)[0];
+                popup_5883f886199e4a828ae91227f9026dda.setContent(html_97b68521eaf34844aaac142b127f26fe);
+            
+
+            marker_02a6dc1504eb4827918a441f3492375f.bindPopup(popup_5883f886199e4a828ae91227f9026dda)
+            ;
+
+            
+        
+    
+        marker_02a6dc1504eb4827918a441f3492375f.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d44c783379b94d16822903d7734a9876 = L.marker(
+            [-34.0347222, 18.4833333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_f458a19ffe6f47b7b3851ff1cfc54e0c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_5a3f6215723547528c79fcc4c710cfd3 = $(`<div id="html_5a3f6215723547528c79fcc4c710cfd3" style="width: 100.0%; height: 100.0%;">Suburb: SouthField      Distance from  V&A Waterfront: 15.511519070855456KM          Height above sea level(m): 16</div>`)[0];
+                popup_f458a19ffe6f47b7b3851ff1cfc54e0c.setContent(html_5a3f6215723547528c79fcc4c710cfd3);
+            
+
+            marker_d44c783379b94d16822903d7734a9876.bindPopup(popup_f458a19ffe6f47b7b3851ff1cfc54e0c)
+            ;
+
+            
+        
+    
+        marker_d44c783379b94d16822903d7734a9876.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c351cb7e024a4ca0882f7bfb42703c71 = L.marker(
+            [-33.9519444, 18.4738889],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_796968e4a2a04ef58f2d85b1f867e781 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_17fa0bcf4a3f4076ac4349975cccec25 = $(`<div id="html_17fa0bcf4a3f4076ac4349975cccec25" style="width: 100.0%; height: 100.0%;">Suburb: Rosebank      Distance from  V&A Waterfront: 7.826328704047542KM          Height above sea level(m): 16</div>`)[0];
+                popup_796968e4a2a04ef58f2d85b1f867e781.setContent(html_17fa0bcf4a3f4076ac4349975cccec25);
+            
+
+            marker_c351cb7e024a4ca0882f7bfb42703c71.bindPopup(popup_796968e4a2a04ef58f2d85b1f867e781)
+            ;
+
+            
+        
+    
+        marker_c351cb7e024a4ca0882f7bfb42703c71.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_85b9f635d3d24fba84dd682c1adf4782 = L.marker(
+            [-33.8104775, 18.4789686],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_32768254028b4abd85ca610a5f5b0823 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6d807fc79e494f55b3d6d7977b783041 = $(`<div id="html_6d807fc79e494f55b3d6d7977b783041" style="width: 100.0%; height: 100.0%;">Suburb: West Beach      Distance from  V&A Waterfront: 11.73726110782284KM          Height above sea level(m): 16</div>`)[0];
+                popup_32768254028b4abd85ca610a5f5b0823.setContent(html_6d807fc79e494f55b3d6d7977b783041);
+            
+
+            marker_85b9f635d3d24fba84dd682c1adf4782.bindPopup(popup_32768254028b4abd85ca610a5f5b0823)
+            ;
+
+            
+        
+    
+        marker_85b9f635d3d24fba84dd682c1adf4782.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1cd1ccfa353c4219ad545ac3a7665ec5 = L.marker(
+            [-33.9091667, 18.3955556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_5e4df34874ae40a5aa2a6511107aa27c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3c7d7b9ec1bb41baa442273fd70eefca = $(`<div id="html_3c7d7b9ec1bb41baa442273fd70eefca" style="width: 100.0%; height: 100.0%;">Suburb: Three Anchor Bay      Distance from  V&A Waterfront: 2.8688053719760065KM          Height above sea level(m): 15</div>`)[0];
+                popup_5e4df34874ae40a5aa2a6511107aa27c.setContent(html_3c7d7b9ec1bb41baa442273fd70eefca);
+            
+
+            marker_1cd1ccfa353c4219ad545ac3a7665ec5.bindPopup(popup_5e4df34874ae40a5aa2a6511107aa27c)
+            ;
+
+            
+        
+    
+        marker_1cd1ccfa353c4219ad545ac3a7665ec5.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_854a90b676f04dac8156f46eae1da51d = L.marker(
+            [-34.05, 18.4680556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b8ebca025baa430197d4c80277ad9da7 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_80720c2f940a465b8a9c5297d8fc5457 = $(`<div id="html_80720c2f940a465b8a9c5297d8fc5457" style="width: 100.0%; height: 100.0%;">Suburb: Heathfield      Distance from  V&A Waterfront: 16.34457691872549KM          Height above sea level(m): 15</div>`)[0];
+                popup_b8ebca025baa430197d4c80277ad9da7.setContent(html_80720c2f940a465b8a9c5297d8fc5457);
+            
+
+            marker_854a90b676f04dac8156f46eae1da51d.bindPopup(popup_b8ebca025baa430197d4c80277ad9da7)
+            ;
+
+            
+        
+    
+        marker_854a90b676f04dac8156f46eae1da51d.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_0c3177ac59284889bc4b3d3d57dd02db = L.marker(
+            [-34.1398647, 18.3269939],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_8356a08d3bad45e393fc3a25cf75fd57 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_894d25d5799946e9b8c63a112ec923ec = $(`<div id="html_894d25d5799946e9b8c63a112ec923ec" style="width: 100.0%; height: 100.0%;">Suburb: Kommetjie      Distance from  V&A Waterfront: 27.0535327551333KM          Height above sea level(m): 14</div>`)[0];
+                popup_8356a08d3bad45e393fc3a25cf75fd57.setContent(html_894d25d5799946e9b8c63a112ec923ec);
+            
+
+            marker_0c3177ac59284889bc4b3d3d57dd02db.bindPopup(popup_8356a08d3bad45e393fc3a25cf75fd57)
+            ;
+
+            
+        
+    
+        marker_0c3177ac59284889bc4b3d3d57dd02db.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_12c62ce9c4184ef490d568d34416f3f1 = L.marker(
+            [-34.0430556, 18.5213889],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_e3d931edbff445b2b68fa65a911ba302 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_aee7ef72fece4cca8e2e357968cde334 = $(`<div id="html_aee7ef72fece4cca8e2e357968cde334" style="width: 100.0%; height: 100.0%;">Suburb: Lotus River      Distance from  V&A Waterfront: 18.50692818398186KM          Height above sea level(m): 14</div>`)[0];
+                popup_e3d931edbff445b2b68fa65a911ba302.setContent(html_aee7ef72fece4cca8e2e357968cde334);
+            
+
+            marker_12c62ce9c4184ef490d568d34416f3f1.bindPopup(popup_e3d931edbff445b2b68fa65a911ba302)
+            ;
+
+            
+        
+    
+        marker_12c62ce9c4184ef490d568d34416f3f1.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1b043f398052437f983caecf8b58baac = L.marker(
+            [-33.9455556, 18.53],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_f2dcd5f04ba94615bafb739898c72bb2 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_65dff54b54584426a58f3cf58202d9fd = $(`<div id="html_65dff54b54584426a58f3cf58202d9fd" style="width: 100.0%; height: 100.0%;">Suburb: Langa      Distance from  V&A Waterfront: 12.940198033313617KM          Height above sea level(m): 14</div>`)[0];
+                popup_f2dcd5f04ba94615bafb739898c72bb2.setContent(html_65dff54b54584426a58f3cf58202d9fd);
+            
+
+            marker_1b043f398052437f983caecf8b58baac.bindPopup(popup_f2dcd5f04ba94615bafb739898c72bb2)
+            ;
+
+            
+        
+    
+        marker_1b043f398052437f983caecf8b58baac.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_654705c8248541629a409b473e15d0a8 = L.marker(
+            [-33.9316667, 18.5127778],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_2146eaa9974b468789f014a002e61eff = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f2839a1d0737447b99f33f6110b203c6 = $(`<div id="html_f2839a1d0737447b99f33f6110b203c6" style="width: 100.0%; height: 100.0%;">Suburb: Pinelands      Distance from  V&A Waterfront: 10.661921963010021KM          Height above sea level(m): 13</div>`)[0];
+                popup_2146eaa9974b468789f014a002e61eff.setContent(html_f2839a1d0737447b99f33f6110b203c6);
+            
+
+            marker_654705c8248541629a409b473e15d0a8.bindPopup(popup_2146eaa9974b468789f014a002e61eff)
+            ;
+
+            
+        
+    
+        marker_654705c8248541629a409b473e15d0a8.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_2667658b00ac4ab6a0dfd8429a2b13a8 = L.marker(
+            [-33.8597498, 18.5229164],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_95fa839b41b8484aa95f12c410fa834a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_58dec573d4434e88918d4435d708ebed = $(`<div id="html_58dec573d4434e88918d4435d708ebed" style="width: 100.0%; height: 100.0%;">Suburb: Montague Gardens      Distance from  V&A Waterfront: 12.25390387210182KM          Height above sea level(m): 13</div>`)[0];
+                popup_95fa839b41b8484aa95f12c410fa834a.setContent(html_58dec573d4434e88918d4435d708ebed);
+            
+
+            marker_2667658b00ac4ab6a0dfd8429a2b13a8.bindPopup(popup_95fa839b41b8484aa95f12c410fa834a)
+            ;
+
+            
+        
+    
+        marker_2667658b00ac4ab6a0dfd8429a2b13a8.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_c46fb27f53d44a57b9c0676dadb60552 = L.marker(
+            [-34.0451287, 18.5032529],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_544b0128758047ef91bcd081b8037cdd = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_ca22e5ce2d0b489a93827c2d9a2e3fd3 = $(`<div id="html_ca22e5ce2d0b489a93827c2d9a2e3fd3" style="width: 100.0%; height: 100.0%;">Suburb: Grassy Park      Distance from  V&A Waterfront: 17.548630506063887KM          Height above sea level(m): 12</div>`)[0];
+                popup_544b0128758047ef91bcd081b8037cdd.setContent(html_ca22e5ce2d0b489a93827c2d9a2e3fd3);
+            
+
+            marker_c46fb27f53d44a57b9c0676dadb60552.bindPopup(popup_544b0128758047ef91bcd081b8037cdd)
+            ;
+
+            
+        
+    
+        marker_c46fb27f53d44a57b9c0676dadb60552.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7e64cc5b5854432c868a8f59340ed5f5 = L.marker(
+            [-34.123395599999995, 18.396997022831712],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_6313258c3d2b4fa7b964ea9daebb4c7c = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_616ce506a9814fe88db7f5fc6ef8b290 = $(`<div id="html_616ce506a9814fe88db7f5fc6ef8b290" style="width: 100.0%; height: 100.0%;">Suburb: Sun Valley      Distance from  V&A Waterfront: 23.37135034782927KM          Height above sea level(m): 12</div>`)[0];
+                popup_6313258c3d2b4fa7b964ea9daebb4c7c.setContent(html_616ce506a9814fe88db7f5fc6ef8b290);
+            
+
+            marker_7e64cc5b5854432c868a8f59340ed5f5.bindPopup(popup_6313258c3d2b4fa7b964ea9daebb4c7c)
+            ;
+
+            
+        
+    
+        marker_7e64cc5b5854432c868a8f59340ed5f5.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b54ea07e230447afac11eb93c4c11500 = L.marker(
+            [-33.9666667, 18.505],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_93a45e4b3db04ebcb319400bae68d983 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d59751bb559346539dcabc1e809aaba7 = $(`<div id="html_d59751bb559346539dcabc1e809aaba7" style="width: 100.0%; height: 100.0%;">Suburb: Athlone      Distance from  V&A Waterfront: 11.508453372081723KM          Height above sea level(m): 12</div>`)[0];
+                popup_93a45e4b3db04ebcb319400bae68d983.setContent(html_d59751bb559346539dcabc1e809aaba7);
+            
+
+            marker_b54ea07e230447afac11eb93c4c11500.bindPopup(popup_93a45e4b3db04ebcb319400bae68d983)
+            ;
+
+            
+        
+    
+        marker_b54ea07e230447afac11eb93c4c11500.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_e1b611ed4d5b4e8d85775d217c1801bf = L.marker(
+            [-34.129372, 18.375791],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_daf0ee4bb0d4493ab1f0d1b27c8c672e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d817ddf4a2e44b27b770eaac3658458e = $(`<div id="html_d817ddf4a2e44b27b770eaac3658458e" style="width: 100.0%; height: 100.0%;">Suburb: Masiphumelele      Distance from  V&A Waterfront: 24.371834742036366KM          Height above sea level(m): 11</div>`)[0];
+                popup_daf0ee4bb0d4493ab1f0d1b27c8c672e.setContent(html_d817ddf4a2e44b27b770eaac3658458e);
+            
+
+            marker_e1b611ed4d5b4e8d85775d217c1801bf.bindPopup(popup_daf0ee4bb0d4493ab1f0d1b27c8c672e)
+            ;
+
+            
+        
+    
+        marker_e1b611ed4d5b4e8d85775d217c1801bf.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_3afa64fc483645eab53c809fac5da8d5 = L.marker(
+            [-33.9088889, 18.4791667],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_b1daf4a920714b968ec66111da95469a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d540ed3cfa624903aaef0608dcfdeb2f = $(`<div id="html_d540ed3cfa624903aaef0608dcfdeb2f" style="width: 100.0%; height: 100.0%;">Suburb: Brooklyn      Distance from  V&A Waterfront: 6.522756161701655KM          Height above sea level(m): 11</div>`)[0];
+                popup_b1daf4a920714b968ec66111da95469a.setContent(html_d540ed3cfa624903aaef0608dcfdeb2f);
+            
+
+            marker_3afa64fc483645eab53c809fac5da8d5.bindPopup(popup_b1daf4a920714b968ec66111da95469a)
+            ;
+
+            
+        
+    
+        marker_3afa64fc483645eab53c809fac5da8d5.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_b69c383d8c2640f89f90d8ae86590929 = L.marker(
+            [-34.0541667, 18.4763889],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_24eb327cc0324e04a0571d8cd7465b4f = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_549906bfb2cf4e699d309eabec66fe0b = $(`<div id="html_549906bfb2cf4e699d309eabec66fe0b" style="width: 100.0%; height: 100.0%;">Suburb: Retreat      Distance from  V&A Waterfront: 17.07444352488438KM          Height above sea level(m): 10</div>`)[0];
+                popup_24eb327cc0324e04a0571d8cd7465b4f.setContent(html_549906bfb2cf4e699d309eabec66fe0b);
+            
+
+            marker_b69c383d8c2640f89f90d8ae86590929.bindPopup(popup_24eb327cc0324e04a0571d8cd7465b4f)
+            ;
+
+            
+        
+    
+        marker_b69c383d8c2640f89f90d8ae86590929.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_9552f069b8e546ef94c87a628967f9a5 = L.marker(
+            [-34.0872222, 18.4569444],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_e165f1f9bc5947f2b2a1d8c9d921949b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_f8db59c5cb744a178f0003c600e7ad9e = $(`<div id="html_f8db59c5cb744a178f0003c600e7ad9e" style="width: 100.0%; height: 100.0%;">Suburb: Lakeside      Distance from  V&A Waterfront: 19.814929656921674KM          Height above sea level(m): 10</div>`)[0];
+                popup_e165f1f9bc5947f2b2a1d8c9d921949b.setContent(html_f8db59c5cb744a178f0003c600e7ad9e);
+            
+
+            marker_9552f069b8e546ef94c87a628967f9a5.bindPopup(popup_e165f1f9bc5947f2b2a1d8c9d921949b)
+            ;
+
+            
+        
+    
+        marker_9552f069b8e546ef94c87a628967f9a5.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_4f8789c50d4f4589bf7126f09bcee48d = L.marker(
+            [-34.0716667, 18.4505556],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_40321b595730427bbdbbb171be0ca146 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_eec917d205064e1d94792cb228123ca6 = $(`<div id="html_eec917d205064e1d94792cb228123ca6" style="width: 100.0%; height: 100.0%;">Suburb: Kirstenhof      Distance from  V&A Waterfront: 18.067899318703848KM          Height above sea level(m): 10</div>`)[0];
+                popup_40321b595730427bbdbbb171be0ca146.setContent(html_eec917d205064e1d94792cb228123ca6);
+            
+
+            marker_4f8789c50d4f4589bf7126f09bcee48d.bindPopup(popup_40321b595730427bbdbbb171be0ca146)
+            ;
+
+            
+        
+    
+        marker_4f8789c50d4f4589bf7126f09bcee48d.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_7b5a7ba3634340dbab6148587b8ab1a4 = L.marker(
+            [-33.8976137, 18.4877778],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_c90605daf8dc481c8c898da87fedad03 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4b332d24f338422dbff9809b87abbd04 = $(`<div id="html_4b332d24f338422dbff9809b87abbd04" style="width: 100.0%; height: 100.0%;">Suburb: Rugby      Distance from  V&A Waterfront: 7.477573000819937KM          Height above sea level(m): 10</div>`)[0];
+                popup_c90605daf8dc481c8c898da87fedad03.setContent(html_4b332d24f338422dbff9809b87abbd04);
+            
+
+            marker_7b5a7ba3634340dbab6148587b8ab1a4.bindPopup(popup_c90605daf8dc481c8c898da87fedad03)
+            ;
+
+            
+        
+    
+        marker_7b5a7ba3634340dbab6148587b8ab1a4.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_002485cf97e5428ca956233ed095cb69 = L.marker(
+            [-34.0661159, 18.7674955],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_ce3467b3f0ba4ac780385440b23c9952 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_601045bb539e408588d20a42c83cf6b5 = $(`<div id="html_601045bb539e408588d20a42c83cf6b5" style="width: 100.0%; height: 100.0%;">Suburb: Macassar      Distance from  V&A Waterfront: 42.20282166166397KM          Height above sea level(m): 9</div>`)[0];
+                popup_ce3467b3f0ba4ac780385440b23c9952.setContent(html_601045bb539e408588d20a42c83cf6b5);
+            
+
+            marker_002485cf97e5428ca956233ed095cb69.bindPopup(popup_ce3467b3f0ba4ac780385440b23c9952)
+            ;
+
+            
+        
+    
+        marker_002485cf97e5428ca956233ed095cb69.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_d2d5dc706bd24216acd73336a86c144d = L.marker(
+            [-33.8236111, 18.4902778],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_938d892ad1234f5abf7aafc467ecdbbc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_4412edc514c3449da1d0e44af2a92c91 = $(`<div id="html_4412edc514c3449da1d0e44af2a92c91" style="width: 100.0%; height: 100.0%;">Suburb: Table View      Distance from  V&A Waterfront: 11.419977992520378KM          Height above sea level(m): 9</div>`)[0];
+                popup_938d892ad1234f5abf7aafc467ecdbbc.setContent(html_4412edc514c3449da1d0e44af2a92c91);
+            
+
+            marker_d2d5dc706bd24216acd73336a86c144d.bindPopup(popup_938d892ad1234f5abf7aafc467ecdbbc)
+            ;
+
+            
+        
+    
+        marker_d2d5dc706bd24216acd73336a86c144d.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dff6d8755cc241fd9ce939960b26b750 = L.marker(
+            [-34.193181, 18.433266],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_ca6833f3c49945b0bbb170c9863df808 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_974679782e2d4bef9eca7c661a5598d9 = $(`<div id="html_974679782e2d4bef9eca7c661a5598d9" style="width: 100.0%; height: 100.0%;">Suburb: Simon's Town      Distance from  V&A Waterfront: 30.612806035315984KM          Height above sea level(m): 8</div>`)[0];
+                popup_ca6833f3c49945b0bbb170c9863df808.setContent(html_974679782e2d4bef9eca7c661a5598d9);
+            
+
+            marker_dff6d8755cc241fd9ce939960b26b750.bindPopup(popup_ca6833f3c49945b0bbb170c9863df808)
+            ;
+
+            
+        
+    
+        marker_dff6d8755cc241fd9ce939960b26b750.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_acfe7ba1cfdb44b6b5fc6d20b2feeb0a = L.marker(
+            [-34.0736111, 18.4833333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_9db9997ab8e94447a3d2537bf80b3bf0 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_3ef6fd014e8a4787b63dd565fab43c9e = $(`<div id="html_3ef6fd014e8a4787b63dd565fab43c9e" style="width: 100.0%; height: 100.0%;">Suburb: Lavender Hill      Distance from  V&A Waterfront: 19.265539883417333KM          Height above sea level(m): 8</div>`)[0];
+                popup_9db9997ab8e94447a3d2537bf80b3bf0.setContent(html_3ef6fd014e8a4787b63dd565fab43c9e);
+            
+
+            marker_acfe7ba1cfdb44b6b5fc6d20b2feeb0a.bindPopup(popup_9db9997ab8e94447a3d2537bf80b3bf0)
+            ;
+
+            
+        
+    
+        marker_acfe7ba1cfdb44b6b5fc6d20b2feeb0a.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ef1f69ace59d40108c2c7dd63712946c = L.marker(
+            [-33.9000229, 18.4038842],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_c6c9c7cb014d49d69d714ab098d2dafc = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_10d12b5123444b1190268b8d82836f99 = $(`<div id="html_10d12b5123444b1190268b8d82836f99" style="width: 100.0%; height: 100.0%;">Suburb: Mouille Point      Distance from  V&A Waterfront: 1.9065315052489116KM          Height above sea level(m): 7</div>`)[0];
+                popup_c6c9c7cb014d49d69d714ab098d2dafc.setContent(html_10d12b5123444b1190268b8d82836f99);
+            
+
+            marker_ef1f69ace59d40108c2c7dd63712946c.bindPopup(popup_c6c9c7cb014d49d69d714ab098d2dafc)
+            ;
+
+            
+        
+    
+        marker_ef1f69ace59d40108c2c7dd63712946c.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_8661208bcb4a40feb8efa07534cf834c = L.marker(
+            [-34.0839266, 18.487609769248806],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_61502ace1e584c4d8d74ee5cf1aebf7b = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_d59f37f6fb884164b9158b329ad27f12 = $(`<div id="html_d59f37f6fb884164b9158b329ad27f12" style="width: 100.0%; height: 100.0%;">Suburb: Vrygrond      Distance from  V&A Waterfront: 20.451745035228907KM          Height above sea level(m): 6</div>`)[0];
+                popup_61502ace1e584c4d8d74ee5cf1aebf7b.setContent(html_d59f37f6fb884164b9158b329ad27f12);
+            
+
+            marker_8661208bcb4a40feb8efa07534cf834c.bindPopup(popup_61502ace1e584c4d8d74ee5cf1aebf7b)
+            ;
+
+            
+        
+    
+        marker_8661208bcb4a40feb8efa07534cf834c.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_824a8ab939744635a046636227c6e39f = L.marker(
+            [-34.0978389, 18.484570761750607],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_f4deda95bafd44a291f6d893ec520b47 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_472febf3c98b49b2a8b5875efd0f1da6 = $(`<div id="html_472febf3c98b49b2a8b5875efd0f1da6" style="width: 100.0%; height: 100.0%;">Suburb: Muizenberg      Distance from  V&A Waterfront: 21.712676379333818KM          Height above sea level(m): 6</div>`)[0];
+                popup_f4deda95bafd44a291f6d893ec520b47.setContent(html_472febf3c98b49b2a8b5875efd0f1da6);
+            
+
+            marker_824a8ab939744635a046636227c6e39f.bindPopup(popup_f4deda95bafd44a291f6d893ec520b47)
+            ;
+
+            
+        
+    
+        marker_824a8ab939744635a046636227c6e39f.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_20410706bdcf4ecb8dbcf212b4dc3362 = L.marker(
+            [-33.722222, 18.445833],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_c7ae6207cacf4a7cb2b2a35e2d584611 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_371ae826ac584176b291e37064720eec = $(`<div id="html_371ae826ac584176b291e37064720eec" style="width: 100.0%; height: 100.0%;">Suburb: Melkbosstrand      Distance from  V&A Waterfront: 19.30394723662797KM          Height above sea level(m): 6</div>`)[0];
+                popup_c7ae6207cacf4a7cb2b2a35e2d584611.setContent(html_371ae826ac584176b291e37064720eec);
+            
+
+            marker_20410706bdcf4ecb8dbcf212b4dc3362.bindPopup(popup_c7ae6207cacf4a7cb2b2a35e2d584611)
+            ;
+
+            
+        
+    
+        marker_20410706bdcf4ecb8dbcf212b4dc3362.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_a30b3c54fe974a87ad8905acaa88bd67 = L.marker(
+            [-34.0910877, 18.4771588],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_76ead50a6494415684112e0b53e4bc76 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c625e86de50e44c1bcdb9585b4fb0c99 = $(`<div id="html_c625e86de50e44c1bcdb9585b4fb0c99" style="width: 100.0%; height: 100.0%;">Suburb: Marina da Gama      Distance from  V&A Waterfront: 20.777888257773718KM          Height above sea level(m): 5</div>`)[0];
+                popup_76ead50a6494415684112e0b53e4bc76.setContent(html_c625e86de50e44c1bcdb9585b4fb0c99);
+            
+
+            marker_a30b3c54fe974a87ad8905acaa88bd67.bindPopup(popup_76ead50a6494415684112e0b53e4bc76)
+            ;
+
+            
+        
+    
+        marker_a30b3c54fe974a87ad8905acaa88bd67.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_45c1deb47b214287a13f214eb6d5fb84 = L.marker(
+            [-33.9229547, 18.4382413],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_6768bd2790c7454fba7285e9a645791a = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_c1e256f2fa784a9583bc15da69420784 = $(`<div id="html_c1e256f2fa784a9583bc15da69420784" style="width: 100.0%; height: 100.0%;">Suburb: Foreshore      Distance from  V&A Waterfront: 2.8435085912859805KM          Height above sea level(m): 5</div>`)[0];
+                popup_6768bd2790c7454fba7285e9a645791a.setContent(html_c1e256f2fa784a9583bc15da69420784);
+            
+
+            marker_45c1deb47b214287a13f214eb6d5fb84.bindPopup(popup_6768bd2790c7454fba7285e9a645791a)
+            ;
+
+            
+        
+    
+        marker_45c1deb47b214287a13f214eb6d5fb84.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_ce6997e5fffa4523a026fab289531c57 = L.marker(
+            [-33.9042571, 18.4059682],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_54d7fb5b92b349bf8e493902cfaf6231 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_9d711b1249b94acaba7f2cba779d9b69 = $(`<div id="html_9d711b1249b94acaba7f2cba779d9b69" style="width: 100.0%; height: 100.0%;">Suburb: Green Point      Distance from  V&A Waterfront: 1.6464213312609122KM          Height above sea level(m): 4</div>`)[0];
+                popup_54d7fb5b92b349bf8e493902cfaf6231.setContent(html_9d711b1249b94acaba7f2cba779d9b69);
+            
+
+            marker_ce6997e5fffa4523a026fab289531c57.bindPopup(popup_54d7fb5b92b349bf8e493902cfaf6231)
+            ;
+
+            
+        
+    
+        marker_ce6997e5fffa4523a026fab289531c57.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_94e207568b4945cbb339f430220d7bea = L.marker(
+            [-33.86923985, 18.497790082442748],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_1e67508213a94ce5a6cd19d3618ad230 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_71206f57a9b34577a1d161b57ae5436c = $(`<div id="html_71206f57a9b34577a1d161b57ae5436c" style="width: 100.0%; height: 100.0%;">Suburb: Milnerton      Distance from  V&A Waterfront: 9.289380297900093KM          Height above sea level(m): 4</div>`)[0];
+                popup_1e67508213a94ce5a6cd19d3618ad230.setContent(html_71206f57a9b34577a1d161b57ae5436c);
+            
+
+            marker_94e207568b4945cbb339f430220d7bea.bindPopup(popup_1e67508213a94ce5a6cd19d3618ad230)
+            ;
+
+            
+        
+    
+        marker_94e207568b4945cbb339f430220d7bea.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_1a3e215d2138458281c404ded52810b1 = L.marker(
+            [-34.0747222, 18.4708333],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_6bad957656df4424819b49d0b7d88a7e = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_7455229bdf6f4814a0b4d27b54ac9ade = $(`<div id="html_7455229bdf6f4814a0b4d27b54ac9ade" style="width: 100.0%; height: 100.0%;">Suburb: Steenberg      Distance from  V&A Waterfront: 18.920763238106886KM          Height above sea level(m): 4</div>`)[0];
+                popup_6bad957656df4424819b49d0b7d88a7e.setContent(html_7455229bdf6f4814a0b4d27b54ac9ade);
+            
+
+            marker_1a3e215d2138458281c404ded52810b1.bindPopup(popup_6bad957656df4424819b49d0b7d88a7e)
+            ;
+
+            
+        
+    
+        marker_1a3e215d2138458281c404ded52810b1.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_dd2761c9839c4df3b8738709e4f07bc6 = L.marker(
+            [-34.043093, 18.355645],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_d1489e33bfe543328385d423c02ac315 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_6007e18e1e7e4accbfd723e87468d172 = $(`<div id="html_6007e18e1e7e4accbfd723e87468d172" style="width: 100.0%; height: 100.0%;">Suburb: Hout Bay      Distance from  V&A Waterfront: 16.4316374822345KM          Height above sea level(m): 4</div>`)[0];
+                popup_d1489e33bfe543328385d423c02ac315.setContent(html_6007e18e1e7e4accbfd723e87468d172);
+            
+
+            marker_dd2761c9839c4df3b8738709e4f07bc6.bindPopup(popup_d1489e33bfe543328385d423c02ac315)
+            ;
+
+            
+        
+    
+        marker_dd2761c9839c4df3b8738709e4f07bc6.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+    
+        var marker_eaeb5d5400594aa9993e177a055ea7fb = L.marker(
+            [-33.91222665, 18.38910185158366],
+            {
+                icon: new L.Icon.Default(),
+                }
+            ).addTo(map_8ea3b83b46bd46c7a482e8eb2c9633fd);
+        
+    
+            var popup_2003fc1602194ed999768e4dbfabe351 = L.popup({maxWidth: '100%'
+            
+            });
+
+            
+                var html_38ef01d57f0e42a69ba3f4f6923ed65c = $(`<div id="html_38ef01d57f0e42a69ba3f4f6923ed65c" style="width: 100.0%; height: 100.0%;">Suburb: Ocean View      Distance from  V&A Waterfront: 3.6427447556900328KM          Height above sea level(m): 3</div>`)[0];
+                popup_2003fc1602194ed999768e4dbfabe351.setContent(html_38ef01d57f0e42a69ba3f4f6923ed65c);
+            
+
+            marker_eaeb5d5400594aa9993e177a055ea7fb.bindPopup(popup_2003fc1602194ed999768e4dbfabe351)
+            ;
+
+            
+        
+    
+        marker_eaeb5d5400594aa9993e177a055ea7fb.bindTooltip(
+            `<div>`
+            + `Click for more information!` + `</div>`,
+            {"sticky": true}
+        );
+        
+</script>
