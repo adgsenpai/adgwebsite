@@ -1,0 +1,360 @@
+<style>
+#myInput {
+  background-image: url('https://icons-for-free.com/iconfiles/png/512/search+icon-1320186817137746225.png'); /* Add a search icon to input */
+  background-position: 10px 12px; /* Position the search icon */
+  background-repeat: no-repeat; /* Do not repeat the icon image */
+  background-size: 25px 25px;
+  width: 100%; /* Full-width */
+  font-size: 16px; /* Increase font-size */
+  padding: 12px 20px 12px 40px; /* Add some padding */
+  border: 1px solid #ddd; /* Add a grey border */
+  margin-bottom: 12px; /* Add some space below the input */
+}
+
+#myTable {
+  border-collapse: collapse; /* Collapse borders */
+  width: 100%; /* Full-width */
+  border: 1px solid #ddd; /* Add a grey border */
+  font-size: 18px; /* Increase font-size */
+}
+
+#myTable th, #myTable td {
+  text-align: left; /* Left-align text */
+  padding: 12px; /* Add padding */
+}
+
+#myTable tr {
+  /* Add a bottom border to all table rows */
+  border-bottom: 1px solid #ddd;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  /* Add a grey background color to the table header and on hover */
+  background-color: #f1f1f1;
+}
+</style>
+
+<script>
+function myFunction() {
+  // Declare variables
+  var input, filter, table, tr, td, i, txtValue;
+  input = document.getElementById("myInput");
+  filter = input.value.toUpperCase();
+  table = document.getElementById("myTable");
+  tr = table.getElementsByTagName("tr");
+
+  // Loop through all table rows, and hide those who don't match the search query
+  for (i = 0; i < tr.length; i++) {
+    td = tr[i].getElementsByTagName("td")[1];
+    if (td) {
+      txtValue = td.textContent || td.innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        tr[i].style.display = "";
+      } else {
+        tr[i].style.display = "none";
+      }
+    }
+  }
+}
+</script>
+
+
+
+<input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for suburbs..">
+<table id="myTable" class="table table-bordered table-hover table-condensed">
+<thead><tr><th title="Field #1">ID</th>
+<th title="Field #2">Suburb</th>
+<th title="Field #3">Latitude</th>
+<th title="Field #4">Longtitude</th>
+<th title="Field #5">Distance(KM)</th>
+<th title="Field #6">Height above sea level(m)</th>
+</tr></thead>
+<tbody><tr>
+<td align="right">22</td>
+<td> Oude Westhof</td>
+<td>-33.8547803</td>
+<td>18.598717559320043</td>
+<td>20.439942934242175</td>
+<td align="right">272</td>
+</tr>
+<tr>
+<td align="right">15</td>
+<td> Kanonberg</td>
+<td>-33.859614300000004</td>
+<td>18.595255559807626</td>
+<td>19.943637126686244</td>
+<td align="right">256</td>
+</tr>
+<tr>
+<td align="right">32</td>
+<td> van Riebeeckshof</td>
+<td>-33.8552334</td>
+<td>18.609697478472572</td>
+<td>21.612868395990496</td>
+<td align="right">231</td>
+</tr>
+<tr>
+<td align="right">30</td>
+<td> Tygerberg Hills</td>
+<td>-33.8474528</td>
+<td>18.6410543</td>
+<td>25.194626141131216</td>
+<td align="right">219</td>
+</tr>
+<tr>
+<td align="right">23</td>
+<td> Protea Valley</td>
+<td>-33.8655556</td>
+<td>18.6166667</td>
+<td>22.145731142337393</td>
+<td align="right">214</td>
+</tr>
+<tr>
+<td align="right">35</td>
+<td>Welgemoed</td>
+<td>-33.8747222</td>
+<td>18.6163889</td>
+<td>21.96203433704467</td>
+<td align="right">204</td>
+</tr>
+<tr>
+<td align="right">31</td>
+<td> Tygervalley</td>
+<td>-33.8456671</td>
+<td>18.6268616</td>
+<td>23.710643092698355</td>
+<td align="right">175</td>
+</tr>
+<tr>
+<td align="right">16</td>
+<td> Kenridge</td>
+<td>-33.8580556</td>
+<td>18.6372222</td>
+<td>24.538978306643706</td>
+<td align="right">173</td>
+</tr>
+<tr>
+<td align="right">14</td>
+<td> Hoheizen</td>
+<td>-33.8830556</td>
+<td>18.6208333</td>
+<td>22.35072345451992</td>
+<td align="right">170</td>
+</tr>
+<tr>
+<td align="right">24</td>
+<td> Ridgeworth</td>
+<td>-33.8738889</td>
+<td>18.6447222</td>
+<td>25.097165212674504</td>
+<td align="right">164</td>
+</tr>
+<tr>
+<td align="right">19</td>
+<td> Loevenstein</td>
+<td>-33.8855556</td>
+<td>18.6063889</td>
+<td>20.727044252747966</td>
+<td align="right">163</td>
+</tr>
+<tr>
+<td align="right">11</td>
+<td> Door de Kraal</td>
+<td>-33.8659271</td>
+<td>18.626852845969815</td>
+<td>23.254147149221733</td>
+<td align="right">139</td>
+</tr>
+<tr>
+<td align="right">6</td>
+<td> Blomtuin</td>
+<td>-33.8833333</td>
+<td>18.6505556</td>
+<td>25.640101033847312</td>
+<td align="right">137</td>
+</tr>
+<tr>
+<td align="right">5</td>
+<td> Bloemhof</td>
+<td>-33.8794444</td>
+<td>18.6488889</td>
+<td>25.49257374511322</td>
+<td align="right">132</td>
+</tr>
+<tr>
+<td align="right">27</td>
+<td> Stellenridge</td>
+<td>-33.875</td>
+<td>18.6583333</td>
+<td>26.58630385263662</td>
+<td align="right">117</td>
+</tr>
+<tr>
+<td align="right">0</td>
+<td>Amanda Glen</td>
+<td>-33.8527778</td>
+<td>18.6597222</td>
+<td>27.101300966598615</td>
+<td align="right">114</td>
+</tr>
+<tr>
+<td align="right">8</td>
+<td> Boston</td>
+<td>-33.8913889</td>
+<td>18.6194444</td>
+<td>22.129814752387233</td>
+<td align="right">110</td>
+</tr>
+<tr>
+<td align="right">21</td>
+<td> Oakdale</td>
+<td>-33.8913889</td>
+<td>18.6363889</td>
+<td>24.011157977601943</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td align="right">33</td>
+<td> Vredelust</td>
+<td>-33.8954693</td>
+<td>18.612363826236752</td>
+<td>21.322828337274075</td>
+<td align="right">100</td>
+</tr>
+<tr>
+<td align="right">9</td>
+<td> Chrismar</td>
+<td>-33.8922222</td>
+<td>18.6469444</td>
+<td>25.17911783936484</td>
+<td align="right">97</td>
+</tr>
+<tr>
+<td align="right">28</td>
+<td> Stellenryk</td>
+<td>-33.8654792</td>
+<td>18.6662167</td>
+<td>27.584621252096756</td>
+<td align="right">92</td>
+</tr>
+<tr>
+<td align="right">2</td>
+<td> Bellair</td>
+<td>-33.8858333</td>
+<td>18.6625</td>
+<td>26.94470275693216</td>
+<td align="right">92</td>
+</tr>
+<tr>
+<td align="right">7</td>
+<td> Bosbell</td>
+<td>-33.8949342</td>
+<td>18.620942225838128</td>
+<td>22.278179299923156</td>
+<td align="right">90</td>
+</tr>
+<tr>
+<td align="right">34</td>
+<td> Vredenburg</td>
+<td>-33.8769444</td>
+<td>18.6669444</td>
+<td>27.516520924541883</td>
+<td align="right">84</td>
+</tr>
+<tr>
+<td align="right">29</td>
+<td> Stikland</td>
+<td>-33.8922222</td>
+<td>18.6691667</td>
+<td>27.647701861124</td>
+<td align="right">71</td>
+</tr>
+<tr>
+<td align="right">13</td>
+<td> Heemstede</td>
+<td>-33.8920553</td>
+<td>18.6697142</td>
+<td>27.70927363823955</td>
+<td align="right">71</td>
+</tr>
+<tr>
+<td align="right">4</td>
+<td> Beroma</td>
+<td>-33.9157711</td>
+<td>18.654724</td>
+<td>26.050321021110218</td>
+<td align="right">70</td>
+</tr>
+<tr>
+<td align="right">3</td>
+<td> Bellville South</td>
+<td>-33.9161111</td>
+<td>18.6444444</td>
+<td>24.910727149446544</td>
+<td align="right">69</td>
+</tr>
+<tr>
+<td align="right">18</td>
+<td> Labiance</td>
+<td>-33.9119444</td>
+<td>18.6591667</td>
+<td>26.526777298476766</td>
+<td align="right">66</td>
+</tr>
+<tr>
+<td align="right">1</td>
+<td> Belhar</td>
+<td>-33.9447222</td>
+<td>18.6258333</td>
+<td>23.21912479076183</td>
+<td align="right">59</td>
+</tr>
+<tr>
+<td align="right">12</td>
+<td> Greenlands</td>
+<td>-33.9501623</td>
+<td>18.592080589397757</td>
+<td>19.68199451404297</td>
+<td align="right">42</td>
+</tr>
+<tr>
+<td align="right">25</td>
+<td> Rosendal</td>
+<td>-33.8636189</td>
+<td>18.5434392</td>
+<td>14.270017599948787</td>
+<td align="right">31</td>
+</tr>
+<tr>
+<td align="right">10</td>
+<td> De la Haye</td>
+<td>-33.9954006</td>
+<td>18.4956186</td>
+<td>12.794113754929512</td>
+<td align="right">23</td>
+</tr>
+<tr>
+<td align="right">20</td>
+<td> Mimosa</td>
+<td>-33.91838490000001</td>
+<td>18.3863489655197</td>
+<td>4.142981736228003</td>
+<td align="right">15</td>
+</tr>
+<tr>
+<td align="right">26</td>
+<td> Stellenberg</td>
+<td>-33.9343111</td>
+<td>18.5153476</td>
+<td>11.016050527381863</td>
+<td align="right">10</td>
+</tr>
+<tr>
+<td align="right">17</td>
+<td> La Rochelle</td>
+<td>-33.9162422</td>
+<td>18.387146148081627</td>
+<td>3.978102529941571</td>
+<td align="right">6</td>
+</tr>
+</tbody></table>
